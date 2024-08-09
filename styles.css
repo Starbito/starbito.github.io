@@ -1,0 +1,189 @@
+* {
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  margin: 36px;
+  padding: 24px;
+  text-align: justify;
+}
+
+h1 {
+  font-size: 72px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 36px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+  text-align: center;
+}
+
+h4 {
+  font-size: 16px;
+  text-align: center;
+  font-style: normal;
+}
+
+/*-----------------------------------------------*/
+
+header {
+  display: inline;
+}
+
+.jumbotron {
+  height: 500px;
+  width: 100%;
+  padding: 10px;
+  background-image:url("jumbotron.jpg")
+}
+
+.jumbotron h1 {
+  color: aliceblue;
+  margin-top: 200px;
+  margin-bottom: 0px;
+}
+
+.jumbotron h4 {
+  color: aliceblue;
+  margin-top: 8px;
+}
+
+nav {
+  background-color:aliceblue;
+  position: sticky;
+  padding: 5px;
+  width: 100%;
+  top: 0;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400px;
+  text-decoration: none;
+  color:darkcyan;
+  transition: all 0.3s ease 0s;
+}
+
+nav a:hover{
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 20px;
+}
+
+li {
+  list-style: none;
+}
+
+.icon {
+  margin-right: auto;
+}
+
+.whatsapp-contact {
+  margin-right: 0px;
+  padding-right: 0px;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+/*============================LAYANAN==================================*/
+#layanan img {
+  height: 200px;
+}
+
+#visi-misi {
+  text-align: center;
+}
+
+#team {
+  text-align: center;
+}
+
+#layanan .column img {
+  flex: 20%;
+}
+
+#layanan .column p { /*????????????????????*/
+  flex: 50%;
+  width: 100%;
+}
+
+#team .column {
+  flex: 33%;
+}
+
+.profile-photo {
+  height: 300px;
+  width: 300px;
+}
+
+/*=============================CONTACT==========================*/
+
+#contact .column {
+  flex: 50%;
+  text-align: center;
+}
+
+#contact img {
+  width: 200px;
+  height: 200px;
+}
+
+
+/*==============================================================*/
+footer {
+  margin-top: 16px;
+  background-color:aliceblue;
+  padding: 5px;
+}
+
+footer ul {
+  font-size: 18px;
+  font-weight: 400px;
+  text-decoration: none;
+}
+
+footer li {
+  margin: auto;
+}
+
+footer #copyright {
+  text-align: center;
+  font-weight: bold;
+}
+
+#footer-logo {
+  display: flex;
+  flex: 25%;
+  height: 150px;
+  width: 300px;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
