@@ -1,3 +1,9 @@
+:root {
+  --primary: #2d3192;
+  --secondary: #0e75ba;
+  --variation: #01acf1;
+}
+
 * {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   scroll-behavior: smooth;
@@ -6,7 +12,6 @@
 body {
   margin: 0;
   padding: 0;
-  color: darkblue;
 }
 
 section {
@@ -39,27 +44,37 @@ p {
   text-align: justify;
 }
 
-/*-----------------------------------------------*/
-
+/* Navigation Bar */
 header {
   display: inline;
 }
 
 .jumbotron {
-  height: 500px;
+  height: 300px;
   width: 100%;
   padding: 10px;
-  background-image:url("jumbotron.jpg")
+  background-image: url("banner_home.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#about.jumbotron {
+  background-image: url("banner_about.png");
+}
+
+#contact.jumbotron {
+  background-image: url("banner_contact.png");
 }
 
 .jumbotron h1 {
-  color: aliceblue;
-  margin-top: 200px;
+  color: white;
+  margin-top: 100px;
   margin-bottom: 0px;
 }
 
 .jumbotron h4 {
-  color: aliceblue;
+  color: white;
   margin-top: 8px;
 }
 
@@ -69,6 +84,7 @@ nav {
   padding: 5px;
   width: 100%;
   top: 0;
+  z-index: 100;
 }
 
 nav a {
@@ -106,14 +122,6 @@ li {
 .whatsapp-contact {
   margin-right: 0px;
   padding-right: 0px;
-}
-
-.row {
-  display: flex;
-}
-
-.column {
-  flex: 50%;
 }
 
 /*============================LAYANAN==================================*/
@@ -371,7 +379,7 @@ li {
 
 #team img {
   width: 100%;
-  height: 300px;
+  height: 400px;
   object-fit: cover;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
@@ -380,6 +388,7 @@ li {
 #team p {
   padding: 8px;
   color: darkslateblue;
+  text-align: center;
 }
 
 /*=============================CONTACT==========================*/
@@ -522,32 +531,90 @@ li {
 
 /*==============================================================*/
 footer {
-  margin-top: 16px;
-  background-color:aliceblue;
-  padding: 5px;
+  width: 100%;
+  position: absolute;
+  color: var(--primary);
+  background: radial-gradient(var(--bg), var(--secondary));
+  padding: 0px;
+  font-size: 20px;
+  line-height: 20px;
 }
 
-footer ul {
-  font-size: 18px;
-  font-weight: 400px;
-  text-decoration: none;
-}
-
-footer li {
+footer .row-footer {
+  width: 73%;
   margin: auto;
-}
-
-footer #copyright {
-  text-align: center;
-  font-weight: bold;
-}
-
-#footer-logo {
   display: flex;
-  flex: 25%;
-  height: 150px;
-  width: 300px;
-  margin-top: 20px;
-  margin-left: 50px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
 }
+
+footer .col-footer {
+  flex-basis: 25%;
+  padding: 50px 0px;
+}
+
+footer .col-footer img {
+  margin-top: 8px;
+  height: 154px;
+}
+
+footer .col-footer:nth-child(3) {
+  flex-basis: 15%;
+}
+
+footer .col-footer h3 {
+  font-family: "Inter";
+  font-weight: bold;
+  color: #2d3192;
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+footer .col-footer ul {
+  padding: 0px;
+}
+
+footer .col-footer ul li {
+  font-family: "Inter";
+  font-weight: 500;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+footer .col-footer ul li a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+footer .col-footer ul li a:hover {
+  text-decoration: none;
+  color: #01acf1;
+}
+
+footer .col-footer-contact {
+  position: relative;
+}
+
+footer .col-footer-contact li {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+}
+
+footer .copyright {
+  width: 100%;
+  padding: 4px 0px;
+  background-image: linear-gradient(to right, #2d3192, #01acf1);
+}
+
+footer .copyright-name {
+  padding: 12px 0px;
+  color: #fff;
+  font-family: "Open Sans";
+  text-align: center;
+  font-size: 20px;
+  line-height: 24px;
+}
+
 
