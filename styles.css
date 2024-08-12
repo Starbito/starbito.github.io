@@ -1,17 +1,17 @@
 * {
-  font-family: sans-serif;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   padding: 0;
+  color: darkblue;
 }
 
 section {
   margin: 36px;
   padding: 24px;
-  text-align: justify;
 }
 
 h1 {
@@ -33,6 +33,10 @@ h4 {
   font-size: 16px;
   text-align: center;
   font-style: normal;
+}
+
+p {
+  text-align: justify;
 }
 
 /*-----------------------------------------------*/
@@ -117,30 +121,63 @@ li {
   height: 200px;
 }
 
-#visi-misi {
+/*==============================VISI-MISI==============================*/
+.visi{
   text-align: center;
 }
 
+.misi li{
+  text-align: center;
+  margin-bottom: 4px;
+  font-size: 18px;
+}
+
+/*====================================TEAM=========================*/
 #team {
-  text-align: center;
+  margin: 0;
+  padding: 16px 0;
+  background-color: cornflowerblue;
 }
 
-#layanan .column img {
-  flex: 20%;
+#team h2 {
+  font-size: 36px;
+  color: aliceblue;
 }
 
-#layanan .column p { /*????????????????????*/
-  flex: 50%;
-  width: 100%;
+#team .row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 56px;
+  box-sizing: border-box;
+  padding: 25px;
 }
 
 #team .column {
-  flex: 33%;
+  flex: 0 1 33%;
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+  background-color: aliceblue;
+  border-radius: 25px;
 }
 
-.profile-photo {
+#team h4 {
+  color: #607070;
+}
+
+#team img {
+  width: 100%;
   height: 300px;
-  width: 300px;
+  object-fit: cover;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+#team p {
+  padding: 8px;
+  color: darkslateblue;
 }
 
 /*=============================CONTACT==========================*/
