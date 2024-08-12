@@ -1,0 +1,477 @@
+/* Root */
+:root {
+  --primary: #2d3192;
+  --secondary: #0e75ba;
+  --variation: #01acf1;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Navigation Bar */
+.navbar {
+  box-shadow: 0px 0px 10px black;
+  position: sticky;
+  background: #fff;
+  top: 0;
+  z-index: 100;
+}
+
+.header {
+  max-width: 1120px;
+  margin: auto;
+}
+
+nav > .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo > img {
+  width: 144px;
+  height: 72px;
+}
+
+.navbar-menu-items {
+  font-family: "Inter";
+  font-size: bold;
+}
+
+.navbar-menu {
+  width: 50%;
+}
+
+.navbar-menu > ul {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar-menu-items {
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  color: #2d3192;
+}
+
+.navbar-menu-items:hover {
+  color: #01acf1;
+}
+
+.navbar-menu ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #01acf1;
+  display: block;
+  transition: 0.2s;
+}
+
+.navbar-menu ul li:hover::after {
+  width: 100%;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  background: url(../img/banner_home.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-content h1 {
+  margin: 0px 0px 12px 0px;
+  padding: 0px;
+  font-family: "Scada";
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.hero-content p {
+  margin: 4px 0px;
+  padding: 0px;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-weight: normal;
+  color: #fff;
+}
+
+.hero-content a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 50px;
+  color: #fff;
+  font-family: "Scada";
+  font-weight: bold;
+  font-size: 18px;
+  background: linear-gradient(to right, #2d3192, #01acf1);
+  border-radius: 8px;
+  box-shadow: -4px 4px 10px #2d3192, 4px 4px 10px #01acf1;
+}
+
+.hero-content a:hover {
+  transform: scale(1.2);
+}
+
+/* Layanan Kami */
+.layanan {
+  background-color: #fff;
+  color: #2d3192;
+}
+
+.layanan .header {
+  padding: 50px 0px;
+}
+
+.layanan .header h2 {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Scada";
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.layanan .header p {
+  padding: 0px 25px;
+  margin: 25px;
+  color: #0e75ba;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: normal;
+  text-align: justify;
+}
+
+.layanan-1 {
+  display: flex;
+  width: 95%;
+  margin: 40px auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.layanan-1:hover {
+  transform: scale(1.02);
+}
+
+.layanan .item-img1 {
+  align-items: center;
+  background: linear-gradient(to bottom right, #2d3192, #01acf1);
+  width: 30%;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px black;
+}
+
+.layanan .item-img1 img {
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  margin: 24px 32px;
+  border-radius: 25px;
+  max-width: 80%;
+}
+
+.layanan .item-img1 h3 {
+  color: #fff;
+  margin: 0px 0px 24px 0px;
+  font-family: "Scada";
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+}
+
+.layanan .item-desc1 {
+  width: 70%;
+  padding: 20px 0px;
+  margin: 0px 0px 0px 24px;
+  background-color: #fff;
+  border: 10px solid #2d3192;
+  border-image: linear-gradient(to bottom right, #2d3192, #01acf1) 1;
+  box-shadow: 0px 0px 10px black;
+}
+
+.layanan .item-desc1 p {
+  margin: 0px;
+  color: #0e75ba;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: normal;
+  text-align: justify;
+}
+
+.layanan-2 {
+  display: flex;
+  width: 95%;
+  margin: 40px auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.layanan-2:hover {
+  transform: scale(1.02);
+}
+
+.layanan .item-img2 {
+  align-items: center;
+  background: linear-gradient(to bottom right, #2d3192, #01acf1);
+  width: 30%;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px black;
+}
+
+.layanan .item-img2 img {
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  margin: 24px 32px;
+  border-radius: 25px;
+  max-width: 80%;
+}
+
+.layanan .item-img2 h3 {
+  color: #fff;
+  margin: 0px 0px 24px 0px;
+  font-family: "Scada";
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+}
+
+.layanan .item-desc2 {
+  width: 70%;
+  padding: 20px 0px;
+  margin: 0px 24px 0px 0px;
+  background-color: #fff;
+  border: 10px solid #2d3192;
+  border-image: linear-gradient(to bottom right, #2d3192, #01acf1) 1;
+  box-shadow: 0px 0px 10px black;
+}
+
+.layanan .item-desc2 p {
+  margin: 0px;
+  color: #0e75ba;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: normal;
+  text-align: justify;
+}
+
+.layanan-3 {
+  display: flex;
+  width: 95%;
+  margin: 40px auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.layanan-3:hover {
+  transform: scale(1.02);
+}
+
+.layanan .item-img3 {
+  align-items: center;
+  background: linear-gradient(to bottom right, #2d3192, #01acf1);
+  width: 30%;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px black;
+}
+
+.layanan .item-img3 img {
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  margin: 24px 32px;
+  border-radius: 25px;
+  max-width: 80%;
+}
+
+.layanan .item-img3 h3 {
+  color: #fff;
+  margin: 0px 0px 24px 0px;
+  font-family: "Scada";
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+}
+
+.layanan .item-desc3 {
+  width: 70%;
+  padding: 20px 0px;
+  margin: 0px 0px 0px 24px;
+  background-color: #fff;
+  border: 10px solid #2d3192;
+  border-image: linear-gradient(to bottom right, #2d3192, #01acf1) 1;
+  box-shadow: 0px 0px 10px black;
+}
+
+.layanan .item-desc3 p {
+  margin: 0px;
+  color: #0e75ba;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: normal;
+  text-align: justify;
+}
+
+/* Contact Us Section */
+.contact-us {
+  min-height: 355px;
+  background: url(../img/banner_cp.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-us-content {
+  text-align: center;
+}
+
+.contact-us-content h2 {
+  margin: 0px 0px 12px 0px;
+  padding: 0px;
+  font-family: "Scada";
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.contact-us-content p {
+  margin: 4px 0px;
+  padding: 0px;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-weight: normal;
+  color: #fff;
+}
+
+.contact-us-content a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 50px;
+  color: #fff;
+  font-family: "Scada";
+  font-weight: bold;
+  font-size: 18px;
+  background: linear-gradient(to right, #2d3192, #01acf1);
+  border-radius: 8px;
+  box-shadow: -4px 4px 10px #2d3192, 4px 4px 10px #01acf1;
+}
+
+.contact-us-content a:hover {
+  transform: scale(1.2);
+}
+
+/* Footer Section */
+footer {
+  width: 100%;
+  position: absolute;
+  color: var(--primary);
+  background: radial-gradient(var(--bg), var(--secondary));
+  padding: 0px;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+footer .row-footer {
+  width: 73%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+footer .col-footer {
+  flex-basis: 25%;
+  padding: 50px 0px;
+}
+
+footer .col-footer img {
+  margin-top: 8px;
+  height: 154px;
+}
+
+footer .col-footer:nth-child(3) {
+  flex-basis: 15%;
+}
+
+footer .col-footer h3 {
+  font-family: "Inter";
+  font-weight: bold;
+  color: #2d3192;
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+footer .col-footer ul {
+  padding: 0px;
+}
+
+footer .col-footer ul li {
+  font-family: "Inter";
+  font-weight: 500;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+footer .col-footer ul li a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+footer .col-footer ul li a:hover {
+  text-decoration: none;
+  color: #01acf1;
+}
+
+footer .col-footer-contact {
+  position: relative;
+}
+
+footer .col-footer-contact li {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+}
+
+footer .copyright {
+  width: 100%;
+  padding: 4px 0px;
+  background-image: linear-gradient(to right, #2d3192, #01acf1);
+}
+
+footer .copyright-name {
+  padding: 12px 0px;
+  color: #fff;
+  font-family: "Open Sans";
+  text-align: center;
+  font-size: 20px;
+  line-height: 24px;
+}
