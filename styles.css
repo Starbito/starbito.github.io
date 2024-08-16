@@ -6,9 +6,43 @@
 }
 
 * {
-  margin: 0px;
-  padding: 0px;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  margin: 36px;
+  padding: 24px;
+  text-align: justify;
+}
+
+h1 {
+  font-size: 72px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 36px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+  text-align: center;
+}
+
+h4 {
+  font-size: 16px;
+  text-align: center;
+  font-style: normal;
+}
+
+/*-----------------------------------------------*/
 
 /* Navigation Bar */
 .navbar {
@@ -85,8 +119,10 @@ nav > .header {
 
 /* Hero Section */
 .hero {
+  padding: 0px;
+  margin: 0px;
   min-height: 100vh;
-  background: url(../img/banner_home.png);
+  background: url(banner_home.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -134,213 +170,44 @@ nav > .header {
   transform: scale(1.2);
 }
 
-/* Layanan Kami */
-.layanan {
-  background-color: #fff;
-  color: #2d3192;
+/*============================LAYANAN==================================*/
+#layanan img {
+  height: 200px;
 }
 
-.layanan .header {
-  padding: 50px 0px;
-}
-
-.layanan .header h2 {
-  margin: 0px;
-  padding: 0px;
-  font-family: "Scada";
-  font-size: 40px;
-  font-weight: bold;
+#visi-misi {
   text-align: center;
 }
 
-.layanan .header p {
-  padding: 0px 25px;
-  margin: 25px;
-  color: #0e75ba;
-  font-family: "Open Sans";
-  font-size: 20px;
-  font-weight: normal;
-  text-align: justify;
-}
-
-.layanan-1 {
-  display: flex;
-  width: 95%;
-  margin: 40px auto;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.layanan-1:hover {
-  transform: scale(1.02);
-}
-
-.layanan .item-img1 {
-  align-items: center;
-  background: linear-gradient(to bottom right, #2d3192, #01acf1);
-  width: 30%;
-  border-radius: 25px;
-  box-shadow: 0px 0px 10px black;
-}
-
-.layanan .item-img1 img {
-  align-items: center;
-  top: 50%;
-  left: 50%;
-  margin: 24px 32px;
-  border-radius: 25px;
-  max-width: 80%;
-}
-
-.layanan .item-img1 h3 {
-  color: #fff;
-  margin: 0px 0px 24px 0px;
-  font-family: "Scada";
-  font-size: 24px;
-  font-weight: bold;
+#team {
   text-align: center;
-  align-items: center;
 }
 
-.layanan .item-desc1 {
-  width: 70%;
-  padding: 20px 0px;
-  margin: 0px 0px 0px 24px;
-  background-color: #fff;
-  border: 10px solid #2d3192;
-  border-image: linear-gradient(to bottom right, #2d3192, #01acf1) 1;
-  box-shadow: 0px 0px 10px black;
+#layanan .column img {
+  flex: 20%;
 }
 
-.layanan .item-desc1 p {
-  margin: 0px;
-  color: #0e75ba;
-  font-family: "Open Sans";
-  font-size: 20px;
-  font-weight: normal;
-  text-align: justify;
+#layanan .column p {
+  /*????????????????????*/
+  flex: 50%;
+  width: 100%;
 }
 
-.layanan-2 {
-  display: flex;
-  width: 95%;
-  margin: 40px auto;
-  justify-content: space-between;
-  align-items: center;
+#team .column {
+  flex: 33%;
 }
 
-.layanan-2:hover {
-  transform: scale(1.02);
+.profile-photo {
+  height: 300px;
+  width: 300px;
 }
 
-.layanan .item-img2 {
-  align-items: center;
-  background: linear-gradient(to bottom right, #2d3192, #01acf1);
-  width: 30%;
-  border-radius: 25px;
-  box-shadow: 0px 0px 10px black;
-}
-
-.layanan .item-img2 img {
-  align-items: center;
-  top: 50%;
-  left: 50%;
-  margin: 24px 32px;
-  border-radius: 25px;
-  max-width: 80%;
-}
-
-.layanan .item-img2 h3 {
-  color: #fff;
-  margin: 0px 0px 24px 0px;
-  font-family: "Scada";
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  align-items: center;
-}
-
-.layanan .item-desc2 {
-  width: 70%;
-  padding: 20px 0px;
-  margin: 0px 24px 0px 0px;
-  background-color: #fff;
-  border: 10px solid #2d3192;
-  border-image: linear-gradient(to bottom right, #2d3192, #01acf1) 1;
-  box-shadow: 0px 0px 10px black;
-}
-
-.layanan .item-desc2 p {
-  margin: 0px;
-  color: #0e75ba;
-  font-family: "Open Sans";
-  font-size: 20px;
-  font-weight: normal;
-  text-align: justify;
-}
-
-.layanan-3 {
-  display: flex;
-  width: 95%;
-  margin: 40px auto;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.layanan-3:hover {
-  transform: scale(1.02);
-}
-
-.layanan .item-img3 {
-  align-items: center;
-  background: linear-gradient(to bottom right, #2d3192, #01acf1);
-  width: 30%;
-  border-radius: 25px;
-  box-shadow: 0px 0px 10px black;
-}
-
-.layanan .item-img3 img {
-  align-items: center;
-  top: 50%;
-  left: 50%;
-  margin: 24px 32px;
-  border-radius: 25px;
-  max-width: 80%;
-}
-
-.layanan .item-img3 h3 {
-  color: #fff;
-  margin: 0px 0px 24px 0px;
-  font-family: "Scada";
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  align-items: center;
-}
-
-.layanan .item-desc3 {
-  width: 70%;
-  padding: 20px 0px;
-  margin: 0px 0px 0px 24px;
-  background-color: #fff;
-  border: 10px solid #2d3192;
-  border-image: linear-gradient(to bottom right, #2d3192, #01acf1) 1;
-  box-shadow: 0px 0px 10px black;
-}
-
-.layanan .item-desc3 p {
-  margin: 0px;
-  color: #0e75ba;
-  font-family: "Open Sans";
-  font-size: 20px;
-  font-weight: normal;
-  text-align: justify;
-}
-
-/* Contact Us Section */
+/* Contact Us (Main) Section */
 .contact-us {
+  padding: 0px;
+  margin: 0px;
   min-height: 355px;
-  background: url(../img/banner_cp.png);
+  background: url(banner_cp.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -388,6 +255,64 @@ nav > .header {
   transform: scale(1.2);
 }
 
+/*=============================ABOUT==========================*/
+/* About Us Section */
+.about-us {
+  padding: 0px;
+  margin: 0px;
+  min-height: 240px;
+  background: url(about.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us-content {
+  text-align: center;
+}
+
+.about-us-content h1 {
+  display: flex;
+  margin: auto;
+  padding: 0px;
+  font-family: "Scada";
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/*=============================CONTACT==========================*/
+/* Contact Section */
+.contact {
+  padding: 0px;
+  margin: 0px;
+  min-height: 240px;
+  background: url(banner_contact.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-content {
+  text-align: center;
+}
+
+.contact-content h1 {
+  margin: auto;
+  padding: 0px;
+  font-family: "Scada";
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/*==============================================================*/
 /* Footer Section */
 footer {
   width: 100%;
@@ -395,6 +320,7 @@ footer {
   color: var(--primary);
   background: radial-gradient(var(--bg), var(--secondary));
   padding: 0px;
+  margin: 0px;
   font-size: 20px;
   line-height: 20px;
 }
@@ -444,7 +370,7 @@ footer .col-footer ul li {
 
 footer .col-footer ul li a {
   text-decoration: none;
-  color: var(--primary);
+  color: #2d3192;
 }
 
 footer .col-footer ul li a:hover {
@@ -463,12 +389,11 @@ footer .col-footer-contact li {
 
 footer .copyright {
   width: 100%;
-  padding: 4px 0px;
+  padding: 2px 0px;
   background-image: linear-gradient(to right, #2d3192, #01acf1);
 }
 
 footer .copyright-name {
-  padding: 12px 0px;
   color: #fff;
   font-family: "Open Sans";
   text-align: center;
