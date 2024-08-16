@@ -391,6 +391,17 @@ li {
   text-align: center;
 }
 
+.card_image_container2 h1{
+  font-family: Scada;
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39.81px;
+  text-align: center;
+}
+
+
+
 /*=============================CONTACT==========================*/
 
 .header_contact{
@@ -421,6 +432,7 @@ li {
   height: 459.06px;
   object-fit: cover;  
   border-radius: 25px;   
+  box-shadow: 0px 5px 10px;
 }
 
 .container_email{
@@ -436,6 +448,17 @@ li {
   left: 21.44px;
   border-radius: 30px;
   top: 60px;
+  transition: 0.3s;
+  box-shadow: 0px 5px 10px;
+}
+
+.email_kami:hover{
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+
+.email_kami a:active{
+  color: #0e75ba;
 }
 
 .telepon_kami{
@@ -447,6 +470,17 @@ li {
   border-radius: 30px;
   top: 60px;
   justify-content: center;
+  transition: 0.3s;
+  box-shadow: 0px 5px 10px;
+}
+
+.telepon_kami:hover{
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+
+.telepon_kami a:active{
+  color: #0e75ba;
 }
 
 .image_email{
@@ -457,6 +491,14 @@ li {
   background-color: white;
   margin-left: 70px;
   top: 30px;
+}
+
+.mail_icon{
+  position: relative;
+  width: 100px;
+  height: 100px;
+  padding-top: 40px;
+  padding-left: 39px;
 }
 
 .detail_email{
@@ -496,6 +538,14 @@ li {
   background-color: white;
   margin-left: 70px;
   top: 30px;
+}
+
+.phone_icon{
+  position: relative;
+  width: 100px;
+  height: 100px;
+  padding-top: 40px;
+  padding-left: 39px;
 }
 
 .detail_telepon{
@@ -616,5 +666,3 @@ footer .copyright-name {
   font-size: 20px;
   line-height: 24px;
 }
-
-
