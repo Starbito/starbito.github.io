@@ -405,51 +405,38 @@ li {
 /*=============================CONTACT==========================*/
 
 .header_contact{
-  text-align: center;
-  font-family: "Scada";
-  color: #2D3192;
-  font-size: 26px;
-  font-weight: 700;
+  /* background-color: green; */
 }
 
 .inner_contact{
-  width: 1080px;
-  height: 459.06px;
   display: flex;
-  /* background-color: brown; */
-  /* position: absolute; */
-  padding-left: 170px;
-  padding-top: 30px;
-}
-
-.inner_contact a{
-  text-decoration: none;
-  
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  /* background-color: green; */
 }
 
 .image_contact img{
   width: 418.56px;
   height: 459.06px;
-  object-fit: cover;  
-  border-radius: 25px;   
-  box-shadow: 0px 5px 10px;
-}
-
-.container_email{
-  width: fit-content;
-  height: fit-content;
+  object-fit: cover;
+  border-radius: 22px;
 }
 
 .email_kami{
+  display: flex;
+  flex-direction: column;
   position: relative;
+  align-self: center;
   width: 310px;
   height: 340px;
+  border-radius: 22px;
   background-image: linear-gradient(to top left, #2D3192,#01ACF1);
-  left: 21.44px;
-  border-radius: 30px;
-  top: 60px;
   transition: 0.3s;
-  box-shadow: 0px 5px 10px;
+}
+
+.email_kami a{
+  text-decoration: none;
 }
 
 .email_kami:hover{
@@ -457,21 +444,71 @@ li {
   transition: 0.5s;
 }
 
-.email_kami a:active{
+.image_email{
+  position: relative;
+  left: 22%;
+  margin-top: 10%;
+  width: 178px;
+  height: 178px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.mail_icon{
+  position: absolute;
+  top: 22%;
+  left: 23%;
+  width: 99px;
+  height: 99px;
   color: #0e75ba;
 }
 
+.detail_email{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 3%;
+  text-align: center;
+  /* background-color: white; */
+}
+
+.judul_email{
+  font-family: Scada;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29.86px;
+  text-align: center;
+  margin: 0 0 0 0;
+  color: white;
+  /* background-color: aqua; */
+}
+
+.alamat_email{
+  margin-bottom: 15%;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+  text-align: center;
+  color: white;
+  /* background-color: aqua; */
+}
+
 .telepon_kami{
+  display: flex;
+  flex-direction: column;
   position: relative;
+  align-self: center;
   width: 310px;
   height: 340px;
+  border-radius: 22px;
   background-image: linear-gradient(to top left, #2D3192,#01ACF1);
-  left: 39px;
-  border-radius: 30px;
-  top: 60px;
-  justify-content: center;
   transition: 0.3s;
-  box-shadow: 0px 5px 10px;
+}
+
+.telepon_kami a{
+  text-decoration: none;
 }
 
 .telepon_kami:hover{
@@ -479,104 +516,62 @@ li {
   transition: 0.5s;
 }
 
-.telepon_kami a:active{
-  color: #0e75ba;
-}
-
-.image_email{
-  position: relative;
-  width: 178px;
-  height: 178px;
-  border-radius: 50%;
-  background-color: white;
-  margin-left: 70px;
-  top: 30px;
-}
-
-.mail_icon{
-  position: relative;
-  width: 100px;
-  height: 100px;
-  padding-top: 40px;
-  padding-left: 39px;
-}
-
-.detail_email{
-  position: relative;
-  justify-content: center;
-  top: 22px;
-  /* right: 17px; */
-  /* background-color: aquamarine; */
-}
-
-.detail_email h1{
-  position: relative;
-  font-family: Scada;
-  font-size: 24px;
-  font-weight: 700;
-  color: white;
-  margin-right: 25px;
-}
-
-.detail_email li{
-  position: relative;
-  font-family: Open Sans;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 25px;
-  right: 10px;
-  color: white;
-  top: -2px;
-  /* left: 5px; */
-}
-
 .image_telepon{
   position: relative;
+  left: 22%;
+  margin-top: 10%;
   width: 178px;
   height: 178px;
   border-radius: 50%;
+  box-sizing: border-box;
   background-color: white;
-  margin-left: 70px;
-  top: 30px;
 }
 
 .phone_icon{
-  position: relative;
-  width: 100px;
-  height: 100px;
-  padding-top: 40px;
-  padding-left: 39px;
+  position: absolute;
+  top: 22%;
+  left: 23%;
+  width: 99px;
+  height: 99px;
+  color: #0e75ba;
 }
 
 .detail_telepon{
-  position: relative;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  top: 22px;
-  /* right: 36px; */
-  /* background-color: aquamarine; */
+  margin-top: 3%;
+  text-align: center;
+  /* background-color: white; */
 }
 
-.detail_telepon h1{
-  position: relative;
+.judul_telepon{
   font-family: Scada;
   font-size: 24px;
   font-weight: 700;
+  line-height: 29.86px;
+  text-align: center;
+  margin: 0 0 0 0;
   color: white;
-  margin-right: 28px;
+  /* background-color: aqua; */
 }
 
-.detail_telepon li{
-  position: relative;
+.judul_telepon:hover{
+  color: ;
+}
+
+.alamat_telepon{
+  margin-bottom: 15%;
   font-family: Open Sans;
   font-size: 18px;
   font-weight: 600;
   line-height: 25px;
-  right: 10px;
+  text-align: center;
   color: white;
-  top: -2px;
-  right: -35px;
-  letter-spacing: 2px;
+  /* background-color: aqua; */
 }
+
+
 
 
 /*==============================================================*/
