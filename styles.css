@@ -131,205 +131,217 @@ li {
 
 .card_container{
   display: flex;
+  position: relative;
   flex-direction: column;
-  width: 100%;
-  height: fit-content;
-  /* background-color: red; */
+  flex-wrap: wrap;
   gap: 50px;
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  padding-left: 3%;
+  /* background-color: aqua; */
 }
-
-/* Card 1 [Web Development] */
 
 .card1{
   display: flex;
-  width: 1080px;
-  height: 460px; 
-  margin-left: 130px; 
-  /* background-color: yellow; */
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  /* background-color: #01ACF1; */
 }
 
-.card_image_container1{
+.image_layanan1{
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 420px;
-  height: 460px;
-  background-image: linear-gradient(to top left, #2D3192,#01ACF1);
+  z-index: 0;
+  width: 70%;
+  max-width: 420px;
+  max-height: 460px;
   border-radius: 22px;
-  justify-content: center;
-  box-shadow: 2px 0px 9px 0.01px;
-  z-index: 2;
-}
-
-.card_image_container1 img{
-  margin-top: 32px;
-  margin-left: 53px;
-  border-radius: 25px;
-  width: 308px;
-  height: 340px;
-}
-
-.card_image_container1 h1{
-  font-family: Scada;
+  background-image: linear-gradient(to top left, #2D3192,#01ACF1);
   color: white;
+}
+
+.image_layanan1 img{
+  position: relative;
+  align-self: center;
+  width: 100%;
+  max-width: 308px;
+  max-height: 340px;
+  border-radius: 22px;
+  margin-top: 10%;
+}
+
+.image_layanan1 h1{
+  font-family: Scada;
   font-size: 32px;
   font-weight: 700;
   line-height: 39.81px;
   text-align: center;
+  margin-top: 2%;
 }
 
 .description_container1{
-  display: flex;
   position: relative;
-  width: 685px;
-  height: 412px;
-  top: 0;
-  left: 0;
-  height: 412px;
-  background-image: linear-gradient(to top left, #2D3192,#01ACF1);
-  margin-top: 28px;
+  align-self: center;
+  max-width: 685px;
+  height: 50vh;
   border-top-right-radius: 22px;
   border-bottom-right-radius: 22px;
-  box-shadow: 2px 0px 9px 0.01px;
-  z-index: 1;
-  /* padding-top: 22px; */
-  /* padding-bottom: 22px; */
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;
+  background-image: linear-gradient(to top left, #2D3192,#01ACF1);
 }
 
 .description1{
-  display: flex;
   position: relative;
-  width: 98%; 
-  height: 95%;  
-  background-color: white;
-  margin-top: 10px;
-  z-index: 0;
+  height: 92%;
   border-top-right-radius: 22px;
   border-bottom-right-radius: 22px;
-  color: #0E75BA;
-  text-align: justify;
+  box-sizing: border-box;
+  margin-top: 14px;
+  margin-right: 22px;
+  background-color: white;
 }
 
 .description1 p{
-  margin-left: 25px;
-  margin-right: 4px;
+  /* position: relative; */
   font-family: Open Sans;
-  font-size: 20px;
+  /* font-size: 22px; */
+  /* font-size: 15px; */
   font-weight: 400;
-  line-height: px;  
+  color: #0E75BA;
+  text-align: justified;
+  justify-content: center;
+  /* background-color: #01ACF1; */
+  overflow: hidden;
+  margin-top: 0;
+  padding-top: 10%;
+  margin-right: 5%;
+  margin-left: 5%;
 }
 
 .icon1{
   position: absolute;
   display: flex;
-  gap: 22px;
+  gap: 5%;
   bottom: 0;
-  margin-left: 20px;
-  margin-bottom: 45px;
-  width: fit-content;
-  height: fit-content;
-  /* background-color: aqua; */
+  margin-bottom: 22px;
+  margin-left: 5%;
 }
 
 .icon1 img{
-  width: fit-content;
-  height: 70px;
-  gap: 0px;
-  opacity: 0px;  
+  width: 12%;
+  height: 10%;
+  /* max-height: 20%; */
 }
 
-/* Card 2 [Mobile Development] */
 .card2{
   display: flex;
   position: relative;
-  flex-direction: row;
-  align-items: center;
-  margin-left: 130px;
-  width: 1080px;
-  height: 460px;  
-  /* background-color: green; */
+  justify-content: center;
+  width: 100%;
+  /* background-color: #01ACF1; */
 }
 
 .description_container2{
   position: relative;
-  width: 685px;
-  height: 412px;
-  background-image: linear-gradient(to top left, #2D3192,#01ACF1);
+  align-self: center;
+  max-width: 685px;
+  height: 50vh;
   border-top-left-radius: 22px;
   border-bottom-left-radius: 22px;
-  box-shadow: -2px 0px 9px 0.01px;
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+  background-image: linear-gradient(to top left, #2D3192,#01ACF1);
 }
 
 .description2{
-  display: flex;
   position: relative;
-  left: 13px;
-  width: 98%; 
-  height: 95%;  
-  background-color: white;
-  margin-top: 10px;
-  z-index: 1;
+  height: 92%;
   border-top-left-radius: 22px;
   border-bottom-left-radius: 22px;
-  color: #0E75BA;
-  text-align: justify;
-  z-index: 1;
+  box-sizing: border-box;
+  margin-top: 14px;
+  margin-left: 22px;
+  background-color: white;
 }
 
 .description2 p{
-  margin-left: 25px;
-  margin-right: 4px;
+  /* position: relative; */
   font-family: Open Sans;
-  font-size: 20px;
+  /* font-size: 22px; */
+  /* font-size: 15px; */
   font-weight: 400;
+  color: #0E75BA;
+  text-align: justified;
+  justify-content: center;
+  /* background-color: #01ACF1; */
+  overflow: hidden;
+  margin-top: 0;
+  padding-top: 10%;
+  margin-right: 5%;
+  margin-left: 5%;
 }
 
 .icon2{
   position: absolute;
   display: flex;
-  gap: 22px;
+  gap: 5%;
   bottom: 0;
-  right: 0;
-  margin-left: 20px;
-  margin-bottom: 45px;
-  width: fit-content;
-  height: fit-content;
-  /* background-color: aqua; */
+  margin-bottom: 22px;
+  margin-left: 5%;
 }
 
 .icon2 img{
-  width: fit-content;
-  height: 70px;
-  gap: 0px;
-  opacity: 0px; 
+  width: 12%;
+  height: 10%;
+  /* max-height: 20%; */
 }
 
-.card_image_container2{
+.image_layanan2{
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
   position: relative;
-  width: 420px;
-  height: 460px;
-  background-image: linear-gradient(to top left, #2D3192,#01ACF1);
+  width: 70%;
+  max-width: 420px;
+  max-height: 460px;
   border-radius: 22px;
-  box-shadow: -2px 0px 9px 0.01px;
-  z-index: 2;
-}
-
-.card_image_container2 img{
-  margin-top: 32px;
-  margin-left: 53px;
-  border-radius: 25px;
-  width: 308px;
-  height: 340px;
-}
-
-.card_image_container2 h1{
-  font-family: Scada;
+  /* padding-left:1%; */
+  background-image: linear-gradient(to top left, #2D3192,#01ACF1);
+  /* background-color: red; */
   color: white;
+}
+
+.image_layanan2 img{
+  position: relative;
+  align-self: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 308px;
+  max-height: 340px;
+  border-radius: 22px;
+  margin-top: 10%;
+}
+
+.image_layanan2 h1{
+  font-family: Scada;
   font-size: 32px;
   font-weight: 700;
   line-height: 39.81px;
   text-align: center;
+  margin-top: 2%;
 }
+
+
+
+
+
+
+
+
 
 /*==============================VISI-MISI==============================*/
 .visi{
@@ -421,6 +433,19 @@ li {
   height: 459.06px;
   object-fit: cover;
   border-radius: 22px;
+}
+
+@media (max-width: 1218px) {
+  .image_contact{
+    /* width: 2vw; */
+    box-sizing: border-box;
+    border-radius: 22px;
+  }
+  .image_contact img{
+    width: 800px;
+    border-radius: 22px;
+  }
+  
 }
 
 .email_kami{
@@ -554,10 +579,6 @@ li {
   margin: 0 0 0 0;
   color: white;
   /* background-color: aqua; */
-}
-
-.judul_telepon:hover{
-  color: ;
 }
 
 .alamat_telepon{
