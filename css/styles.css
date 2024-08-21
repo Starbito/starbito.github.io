@@ -1,0 +1,905 @@
+:root {
+  --primary: #2d3192;
+  --secondary: #0e75ba;
+  --variation: #01acf1;
+}
+
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  margin: 36px;
+  padding: 24px;
+}
+
+h1 {
+  font-size: 72px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 36px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+  text-align: center;
+}
+
+h4 {
+  font-size: 16px;
+  text-align: center;
+  font-style: normal;
+}
+
+p {
+  text-align: justify;
+}
+
+/* Navigation Bar */
+.navbar {
+  box-shadow: 0px 0px 10px black;
+  position: sticky;
+  background: #fff;
+  top: 0;
+  z-index: 100;
+}
+
+.header {
+  max-width: 1120px;
+  margin: auto;
+}
+
+nav > .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo > img {
+  width: 144px;
+  height: 72px;
+}
+
+.navbar-menu-items {
+  font-family: "Inter";
+  font-size: bold;
+}
+
+.navbar-menu {
+  width: 50%;
+}
+
+.navbar-menu > ul {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar-menu-items {
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  color: #2d3192;
+}
+
+.navbar-menu-items:hover {
+  color: #01acf1;
+}
+
+.navbar-menu ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #01acf1;
+  display: block;
+  transition: 0.2s;
+}
+
+.navbar-menu ul li:hover::after {
+  width: 100%;
+}
+
+/* Hero Section */
+.hero {
+  padding: 0px;
+  margin: 0px;
+  min-height: 100vh;
+  background: url(../img/banner_home.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-content h1 {
+  margin: 0px 0px 12px 0px;
+  padding: 0px;
+  font-family: "Scada";
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.hero-content p {
+  margin: 4px 0px;
+  padding: 0px;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-weight: normal;
+  color: #fff;
+}
+
+.hero-content a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 50px;
+  color: #fff;
+  font-family: "Scada";
+  font-weight: bold;
+  font-size: 18px;
+  background: linear-gradient(to right, #2d3192, #01acf1);
+  border-radius: 8px;
+  box-shadow: -4px 4px 10px #2d3192, 4px 4px 10px #01acf1;
+}
+
+.hero-content a:hover {
+  transform: scale(1.2);
+}
+
+/*============================LAYANAN==================================*/
+.layanan h1 {
+  color: var(--primary);
+}
+
+.layanan p {
+  margin: 2rem 15rem;
+  padding: auto 0;
+}
+
+/* Container dari Container [Card 1, Card 2, Card 3] */
+
+.card_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  /* background-color: red; */
+  gap: 50px;
+}
+
+/* Card 1 [Web Development] */
+
+.card1 {
+  display: flex;
+  width: 1080px;
+  height: 460px;
+  margin-left: 130px;
+  /* background-color: yellow; */
+}
+
+.card_image_container1 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 420px;
+  height: 460px;
+  background-image: linear-gradient(to top left, #2d3192, #01acf1);
+  border-radius: 22px;
+  justify-content: center;
+  box-shadow: 2px 0px 9px 0.01px;
+  z-index: 2;
+}
+
+.card_image_container1 img {
+  margin-top: 32px;
+  margin-left: 53px;
+  border-radius: 25px;
+  width: 308px;
+  height: 340px;
+}
+
+.card_image_container1 h1 {
+  font-family: Scada;
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39.81px;
+  text-align: center;
+}
+
+.description_container1 {
+  display: flex;
+  position: relative;
+  width: 685px;
+  height: 412px;
+  top: 0;
+  left: 0;
+  height: 412px;
+  background-image: linear-gradient(to top left, #2d3192, #01acf1);
+  margin-top: 28px;
+  border-top-right-radius: 22px;
+  border-bottom-right-radius: 22px;
+  box-shadow: 2px 0px 9px 0.01px;
+  z-index: 1;
+  /* padding-top: 22px; */
+  /* padding-bottom: 22px; */
+}
+
+.description1 {
+  display: flex;
+  position: relative;
+  width: 98%;
+  height: 95%;
+  background-color: white;
+  margin-top: 10px;
+  z-index: 0;
+  border-top-right-radius: 22px;
+  border-bottom-right-radius: 22px;
+  color: #0e75ba;
+  text-align: justify;
+}
+
+.description1 p {
+  margin-left: 25px;
+  margin-right: 4px;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: px;
+}
+
+.icon1 {
+  position: absolute;
+  display: flex;
+  gap: 22px;
+  bottom: 0;
+  margin-left: 20px;
+  margin-bottom: 45px;
+  width: fit-content;
+  height: fit-content;
+  /* background-color: aqua; */
+}
+
+.icon1 img {
+  width: fit-content;
+  height: 70px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+/* Card 2 [Mobile Development] */
+.card2 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 130px;
+  width: 1080px;
+  height: 460px;
+  /* background-color: green; */
+}
+
+.description_container2 {
+  position: relative;
+  width: 685px;
+  height: 412px;
+  background-image: linear-gradient(to top left, #2d3192, #01acf1);
+  border-top-left-radius: 22px;
+  border-bottom-left-radius: 22px;
+  box-shadow: -2px 0px 9px 0.01px;
+}
+
+.description2 {
+  display: flex;
+  position: relative;
+  left: 13px;
+  width: 98%;
+  height: 95%;
+  background-color: white;
+  margin-top: 10px;
+  z-index: 1;
+  border-top-left-radius: 22px;
+  border-bottom-left-radius: 22px;
+  color: #0e75ba;
+  text-align: justify;
+  z-index: 1;
+}
+
+.description2 p {
+  margin-left: 25px;
+  margin-right: 4px;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.icon2 {
+  position: absolute;
+  display: flex;
+  gap: 22px;
+  bottom: 0;
+  right: 0;
+  margin-left: 20px;
+  margin-bottom: 45px;
+  width: fit-content;
+  height: fit-content;
+  /* background-color: aqua; */
+}
+
+.icon2 img {
+  width: fit-content;
+  height: 70px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.card_image_container2 {
+  position: relative;
+  width: 420px;
+  height: 460px;
+  background-image: linear-gradient(to top left, #2d3192, #01acf1);
+  border-radius: 22px;
+  box-shadow: -2px 0px 9px 0.01px;
+  z-index: 2;
+}
+
+.card_image_container2 img {
+  margin-top: 32px;
+  margin-left: 53px;
+  border-radius: 25px;
+  width: 308px;
+  height: 340px;
+}
+
+.card_image_container2 h1 {
+  font-family: Scada;
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39.81px;
+  text-align: center;
+}
+
+/* Contact Us (Main) Section */
+.contact-us {
+  padding: 0px;
+  margin: 0px;
+  min-height: 355px;
+  background: url(../img/banner_cp.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-us-content {
+  text-align: center;
+}
+
+.contact-us-content h2 {
+  margin: 0px 0px 12px 0px;
+  padding: 0px;
+  font-family: "Scada";
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.contact-us-content p {
+  margin: 4px 0px;
+  padding: 0px;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-weight: normal;
+  color: #fff;
+}
+
+.contact-us-content a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 50px;
+  color: #fff;
+  font-family: "Scada";
+  font-weight: bold;
+  font-size: 18px;
+  background: linear-gradient(to right, #2d3192, #01acf1);
+  border-radius: 8px;
+  box-shadow: -4px 4px 10px #2d3192, 4px 4px 10px #01acf1;
+}
+
+.contact-us-content a:hover {
+  transform: scale(1.2);
+}
+
+/*=============================ABOUT==========================*/
+/* About Us Section */
+.about-us {
+  padding: 0px;
+  margin: 0px;
+  min-height: 240px;
+  background: url(../img/banner_about.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us-content {
+  text-align: center;
+}
+
+.about-us-content h1 {
+  display: flex;
+  margin: auto;
+  padding: 0px;
+  font-family: "Scada";
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/*==============================VISI-MISI==============================*/
+#visi-misi {
+  margin-right: 15rem;
+  margin-left: 15rem;
+  padding: auto 0;
+}
+
+#visi-misi h2 {
+  color: var(--primary);
+}
+
+#visi-misi p {
+  font-size: 18px;
+}
+
+.visi {
+  text-align: center;
+}
+
+.misi li {
+  text-align: center;
+  margin-bottom: 4px;
+  font-size: 18px;
+}
+
+/*====================================TEAM=========================*/
+#team {
+  margin: 0;
+  padding: 16px 0;
+  background-color: cornflowerblue;
+}
+
+#team hr {
+  color: aliceblue;
+  margin: 0.5rem 2rem;
+  padding: 0 2rem;
+}
+
+#team h2 {
+  font-size: 36px;
+  color: aliceblue;
+}
+
+#team h4 {
+  font-size: 18px;
+  color: #607070;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+#team .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 72px;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 32px 24px;
+  padding: 8px;
+}
+
+#team .column {
+  width: 100%;
+  max-width: 350px;
+  height: fit-content;
+  text-align: center;
+  background-color: aliceblue;
+  border: 1px solid #7fc7d9;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 40px;
+}
+
+#team .profile-photo {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+#team p {
+  padding: 8px;
+  color: darkslateblue;
+  text-align: center;
+}
+
+#socials img {
+  margin: 8px 24px;
+  height: 35px;
+  width: 35px;
+  transition: all 0.2s;
+}
+
+#socials img:hover {
+  margin: 0 22px;
+  height: 40px;
+  width: 40px;
+}
+
+#socials a {
+  text-decoration: none;
+}
+
+/*=============================CONTACT==========================*/
+/* Contact Section */
+.contact {
+  padding: 0px;
+  margin: 0px;
+  min-height: 240px;
+  background: url(../img/banner_contact.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-content {
+  text-align: center;
+}
+
+.contact-content h1 {
+  margin: auto;
+  padding: 0px;
+  font-family: "Scada";
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.card_image_container2 h1 {
+  font-family: Scada;
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39.81px;
+  text-align: center;
+}
+
+.header_contact {
+  text-align: center;
+  font-family: "Scada";
+  color: #2d3192;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.inner_contact {
+  width: 1080px;
+  height: 459.06px;
+  display: flex;
+  /* background-color: brown; */
+  /* position: absolute; */
+  padding-left: 170px;
+  padding-top: 30px;
+}
+
+.inner_contact a {
+  text-decoration: none;
+}
+
+.image_contact img {
+  width: 418.56px;
+  height: 459.06px;
+  object-fit: cover;
+  border-radius: 25px;
+  box-shadow: 0px 5px 10px;
+}
+
+.container_email {
+  width: fit-content;
+  height: fit-content;
+}
+
+.email_kami {
+  position: relative;
+  width: 310px;
+  height: 340px;
+  background-image: linear-gradient(to top left, #2d3192, #01acf1);
+  left: 21.44px;
+  border-radius: 30px;
+  top: 60px;
+  transition: 0.3s;
+  box-shadow: 0px 5px 10px;
+}
+
+.email_kami:hover {
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+
+.email_kami a:active {
+  color: #0e75ba;
+}
+
+.telepon_kami {
+  position: relative;
+  width: 310px;
+  height: 340px;
+  background-image: linear-gradient(to top left, #2d3192, #01acf1);
+  left: 39px;
+  border-radius: 30px;
+  top: 60px;
+  justify-content: center;
+  transition: 0.3s;
+  box-shadow: 0px 5px 10px;
+}
+
+.telepon_kami:hover {
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+
+.telepon_kami a:active {
+  color: #0e75ba;
+}
+
+.image_email {
+  position: relative;
+  width: 178px;
+  height: 178px;
+  border-radius: 50%;
+  background-color: white;
+  margin-left: 70px;
+  top: 30px;
+}
+
+.mail_icon {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  padding-top: 40px;
+  padding-left: 39px;
+}
+
+.detail_email {
+  position: relative;
+  justify-content: center;
+  top: 22px;
+  /* right: 17px; */
+  /* background-color: aquamarine; */
+}
+
+.detail_email h1 {
+  position: relative;
+  font-family: Scada;
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  margin-right: 25px;
+}
+
+.detail_email li {
+  position: relative;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+  right: 10px;
+  color: white;
+  top: -2px;
+  /* left: 5px; */
+}
+
+.image_telepon {
+  position: relative;
+  width: 178px;
+  height: 178px;
+  border-radius: 50%;
+  background-color: white;
+  margin-left: 70px;
+  top: 30px;
+}
+
+.phone_icon {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  padding-top: 40px;
+  padding-left: 39px;
+}
+
+.detail_telepon {
+  position: relative;
+  justify-content: center;
+  top: 22px;
+  /* right: 36px; */
+  /* background-color: aquamarine; */
+}
+
+.detail_telepon h1 {
+  position: relative;
+  font-family: Scada;
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  margin-right: 28px;
+}
+
+.detail_telepon li {
+  position: relative;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+  right: 10px;
+  color: white;
+  top: -2px;
+  right: -35px;
+  letter-spacing: 2px;
+}
+
+/*==============================================================*/
+footer {
+  width: 100%;
+  position: absolute;
+  color: var(--primary);
+  background: radial-gradient(var(--bg), var(--secondary));
+  padding: 0px;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+footer .row-footer {
+  width: 73%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+footer .col-footer {
+  flex-basis: 25%;
+  padding: 50px 0px;
+}
+
+footer .col-footer img {
+  margin-top: 8px;
+  height: 154px;
+}
+
+footer .col-footer:nth-child(3) {
+  flex-basis: 15%;
+}
+
+footer .col-footer h3 {
+  font-family: "Inter";
+  font-weight: bold;
+  color: #2d3192;
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+footer .col-footer ul {
+  padding: 0px;
+}
+
+footer .col-footer ul li {
+  font-family: "Inter";
+  font-weight: 500;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+footer .col-footer ul li a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+footer .col-footer ul li a:hover {
+  text-decoration: none;
+  color: #01acf1;
+}
+
+footer .col-footer-contact {
+  position: relative;
+}
+
+footer .col-footer-contact li {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+}
+
+footer .copyright {
+  width: 100%;
+  padding: 4px 0px;
+  background-image: linear-gradient(to right, #2d3192, #01acf1);
+}
+
+footer .copyright-name {
+  padding: 12px 0px;
+  color: #fff;
+  font-family: "Open Sans";
+  text-align: center;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/*============Viewport================*/
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (max-width: 1500px) {
+  .layanan p {
+    margin-right: 12rem;
+    margin-left: 12rem;
+    padding: auto 0;
+  }
+
+  #visi-misi {
+    margin-right: 12rem;
+    margin-left: 12rem;
+    padding: auto 0;
+  }
+}
+
+@media screen and (max-width: 1125px) {
+  .layanan p {
+    margin-right: 5rem;
+    margin-left: 5rem;
+    padding: auto 0;
+  }
+
+  #visi-misi {
+    margin-right: 5rem;
+    margin-left: 5rem;
+    padding: auto 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
