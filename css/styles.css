@@ -5,7 +5,7 @@
 }
 
 * {
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   scroll-behavior: smooth;
   box-sizing: border-box;
 }
@@ -46,82 +46,129 @@ p {
 }
 
 /* Navigation Bar */
-header {
-  display: inline;
-}
-
-.jumbotron {
-  height: 300px;
-  width: 100%;
-  padding: 10px;
-  background-image: url("banner_home.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-#about.jumbotron {
-  background-image: url("banner_about.png");
-}
-
-#contact.jumbotron {
-  background-image: url("banner_contact.png");
-}
-
-.jumbotron h1 {
-  color: white;
-  margin-top: 100px;
-  margin-bottom: 0px;
-}
-
-.jumbotron h4 {
-  color: white;
-  margin-top: 8px;
-}
-
-nav {
-  background-color:aliceblue;
+.navbar {
+  box-shadow: 0px 0px 10px black;
   position: sticky;
-  padding: 5px;
-  width: 100%;
+  background: #fff;
   top: 0;
   z-index: 100;
 }
 
-nav a {
-  font-size: 18px;
-  font-weight: 400px;
-  text-decoration: none;
-  color:darkcyan;
-  transition: all 0.3s ease 0s;
+.header {
+  max-width: 1120px;
+  margin: auto;
 }
 
-nav a:hover{
-  font-weight: bold;
-}
-
-nav ul {
+nav > .header {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-logo {
+  display: flex;
   align-items: center;
 }
 
-nav li {
+.navbar-logo > img {
+  width: 144px;
+  height: 72px;
+}
+
+.navbar-menu-items {
+  font-family: "Inter";
+  font-size: bold;
+}
+
+.navbar-menu {
+  width: 50%;
+}
+
+.navbar-menu > ul {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar-menu-items {
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  color: #2d3192;
+}
+
+.navbar-menu-items:hover {
+  color: #01acf1;
+}
+
+.navbar-menu ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #01acf1;
+  display: block;
+  transition: 0.2s;
+}
+
+.navbar-menu ul li:hover::after {
+  width: 100%;
+}
+
+/* Hero Section */
+.hero {
+  padding: 0px;
+  margin: 0px;
+  min-height: 100vh;
+  background: url(../img/banner_home.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-content h1 {
+  margin: 0px 0px 12px 0px;
+  padding: 0px;
+  font-family: "Scada";
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.hero-content p {
+  margin: 4px 0px;
+  padding: 0px;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-weight: normal;
+  color: #fff;
+}
+
+.hero-content a {
   display: inline-block;
-  padding: 0 20px;
+  text-decoration: none;
+  padding: 12px 50px;
+  color: #fff;
+  font-family: "Scada";
+  font-weight: bold;
+  font-size: 18px;
+  background: linear-gradient(to right, #2d3192, #01acf1);
+  border-radius: 8px;
+  box-shadow: -4px 4px 10px #2d3192, 4px 4px 10px #01acf1;
 }
 
-li {
-  list-style: none;
-}
-
-.icon {
-  margin-right: auto;
-}
-
-.whatsapp-contact {
-  margin-right: 0px;
-  padding-right: 0px;
+.hero-content a:hover {
+  transform: scale(1.2);
 }
 
 /*============================LAYANAN==================================*/
@@ -136,7 +183,7 @@ li {
 
 /* Container dari Container [Card 1, Card 2, Card 3] */
 
-.card_container{
+.card_container {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -147,28 +194,28 @@ li {
 
 /* Card 1 [Web Development] */
 
-.card1{
+.card1 {
   display: flex;
   width: 1080px;
-  height: 460px; 
-  margin-left: 130px; 
+  height: 460px;
+  margin-left: 130px;
   /* background-color: yellow; */
 }
 
-.card_image_container1{
+.card_image_container1 {
   display: flex;
   flex-direction: column;
   position: relative;
   width: 420px;
   height: 460px;
-  background-image: linear-gradient(to top left, #2D3192,#01ACF1);
+  background-image: linear-gradient(to top left, #2d3192, #01acf1);
   border-radius: 22px;
   justify-content: center;
   box-shadow: 2px 0px 9px 0.01px;
   z-index: 2;
 }
 
-.card_image_container1 img{
+.card_image_container1 img {
   margin-top: 32px;
   margin-left: 53px;
   border-radius: 25px;
@@ -176,7 +223,7 @@ li {
   height: 340px;
 }
 
-.card_image_container1 h1{
+.card_image_container1 h1 {
   font-family: Scada;
   color: white;
   font-size: 32px;
@@ -185,7 +232,7 @@ li {
   text-align: center;
 }
 
-.description_container1{
+.description_container1 {
   display: flex;
   position: relative;
   width: 685px;
@@ -193,7 +240,7 @@ li {
   top: 0;
   left: 0;
   height: 412px;
-  background-image: linear-gradient(to top left, #2D3192,#01ACF1);
+  background-image: linear-gradient(to top left, #2d3192, #01acf1);
   margin-top: 28px;
   border-top-right-radius: 22px;
   border-bottom-right-radius: 22px;
@@ -203,30 +250,30 @@ li {
   /* padding-bottom: 22px; */
 }
 
-.description1{
+.description1 {
   display: flex;
   position: relative;
-  width: 98%; 
-  height: 95%;  
+  width: 98%;
+  height: 95%;
   background-color: white;
   margin-top: 10px;
   z-index: 0;
   border-top-right-radius: 22px;
   border-bottom-right-radius: 22px;
-  color: #0E75BA;
+  color: #0e75ba;
   text-align: justify;
 }
 
-.description1 p{
+.description1 p {
   margin-left: 25px;
   margin-right: 4px;
   font-family: Open Sans;
   font-size: 20px;
   font-weight: 400;
-  line-height: px;  
+  line-height: px;
 }
 
-.icon1{
+.icon1 {
   position: absolute;
   display: flex;
   gap: 22px;
@@ -238,52 +285,52 @@ li {
   /* background-color: aqua; */
 }
 
-.icon1 img{
+.icon1 img {
   width: fit-content;
   height: 70px;
   gap: 0px;
-  opacity: 0px;  
+  opacity: 0px;
 }
 
 /* Card 2 [Mobile Development] */
-.card2{
+.card2 {
   display: flex;
   position: relative;
   flex-direction: row;
   align-items: center;
   margin-left: 130px;
   width: 1080px;
-  height: 460px;  
+  height: 460px;
   /* background-color: green; */
 }
 
-.description_container2{
+.description_container2 {
   position: relative;
   width: 685px;
   height: 412px;
-  background-image: linear-gradient(to top left, #2D3192,#01ACF1);
+  background-image: linear-gradient(to top left, #2d3192, #01acf1);
   border-top-left-radius: 22px;
   border-bottom-left-radius: 22px;
   box-shadow: -2px 0px 9px 0.01px;
 }
 
-.description2{
+.description2 {
   display: flex;
   position: relative;
   left: 13px;
-  width: 98%; 
-  height: 95%;  
+  width: 98%;
+  height: 95%;
   background-color: white;
   margin-top: 10px;
   z-index: 1;
   border-top-left-radius: 22px;
   border-bottom-left-radius: 22px;
-  color: #0E75BA;
+  color: #0e75ba;
   text-align: justify;
   z-index: 1;
 }
 
-.description2 p{
+.description2 p {
   margin-left: 25px;
   margin-right: 4px;
   font-family: Open Sans;
@@ -291,7 +338,7 @@ li {
   font-weight: 400;
 }
 
-.icon2{
+.icon2 {
   position: absolute;
   display: flex;
   gap: 22px;
@@ -304,24 +351,24 @@ li {
   /* background-color: aqua; */
 }
 
-.icon2 img{
+.icon2 img {
   width: fit-content;
   height: 70px;
   gap: 0px;
-  opacity: 0px; 
+  opacity: 0px;
 }
 
-.card_image_container2{
+.card_image_container2 {
   position: relative;
   width: 420px;
   height: 460px;
-  background-image: linear-gradient(to top left, #2D3192,#01ACF1);
+  background-image: linear-gradient(to top left, #2d3192, #01acf1);
   border-radius: 22px;
   box-shadow: -2px 0px 9px 0.01px;
   z-index: 2;
 }
 
-.card_image_container2 img{
+.card_image_container2 img {
   margin-top: 32px;
   margin-left: 53px;
   border-radius: 25px;
@@ -329,13 +376,95 @@ li {
   height: 340px;
 }
 
-.card_image_container2 h1{
+.card_image_container2 h1 {
   font-family: Scada;
   color: white;
   font-size: 32px;
   font-weight: 700;
   line-height: 39.81px;
   text-align: center;
+}
+
+/* Contact Us (Main) Section */
+.contact-us {
+  padding: 0px;
+  margin: 0px;
+  min-height: 355px;
+  background: url(../img/banner_cp.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-us-content {
+  text-align: center;
+}
+
+.contact-us-content h2 {
+  margin: 0px 0px 12px 0px;
+  padding: 0px;
+  font-family: "Scada";
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.contact-us-content p {
+  margin: 4px 0px;
+  padding: 0px;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-weight: normal;
+  color: #fff;
+}
+
+.contact-us-content a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 50px;
+  color: #fff;
+  font-family: "Scada";
+  font-weight: bold;
+  font-size: 18px;
+  background: linear-gradient(to right, #2d3192, #01acf1);
+  border-radius: 8px;
+  box-shadow: -4px 4px 10px #2d3192, 4px 4px 10px #01acf1;
+}
+
+.contact-us-content a:hover {
+  transform: scale(1.2);
+}
+
+/*=============================ABOUT==========================*/
+/* About Us Section */
+.about-us {
+  padding: 0px;
+  margin: 0px;
+  min-height: 240px;
+  background: url(../img/banner_about.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us-content {
+  text-align: center;
+}
+
+.about-us-content h1 {
+  display: flex;
+  margin: auto;
+  padding: 0px;
+  font-family: "Scada";
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
 }
 
 /*==============================VISI-MISI==============================*/
@@ -353,11 +482,11 @@ li {
   font-size: 18px;
 }
 
-.visi{
+.visi {
   text-align: center;
 }
 
-.misi li{
+.misi li {
   text-align: center;
   margin-bottom: 4px;
   font-size: 18px;
@@ -388,7 +517,7 @@ li {
   margin-bottom: 0;
 }
 
-#team .row{
+#team .row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -406,7 +535,7 @@ li {
   height: fit-content;
   text-align: center;
   background-color: aliceblue;
-  border: 1px solid #7FC7D9;
+  border: 1px solid #7fc7d9;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 40px;
 }
@@ -443,7 +572,34 @@ li {
 }
 
 /*=============================CONTACT==========================*/
-.card_image_container2 h1{
+/* Contact Section */
+.contact {
+  padding: 0px;
+  margin: 0px;
+  min-height: 240px;
+  background: url(../img/banner_contact.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-content {
+  text-align: center;
+}
+
+.contact-content h1 {
+  margin: auto;
+  padding: 0px;
+  font-family: "Scada";
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.card_image_container2 h1 {
   font-family: Scada;
   color: white;
   font-size: 32px;
@@ -452,15 +608,15 @@ li {
   text-align: center;
 }
 
-.header_contact{
+.header_contact {
   text-align: center;
   font-family: "Scada";
-  color: #2D3192;
+  color: #2d3192;
   font-size: 26px;
   font-weight: 700;
 }
 
-.inner_contact{
+.inner_contact {
   width: 1080px;
   height: 459.06px;
   display: flex;
@@ -470,29 +626,28 @@ li {
   padding-top: 30px;
 }
 
-.inner_contact a{
+.inner_contact a {
   text-decoration: none;
-  
 }
 
-.image_contact img{
+.image_contact img {
   width: 418.56px;
   height: 459.06px;
-  object-fit: cover;  
-  border-radius: 25px;   
+  object-fit: cover;
+  border-radius: 25px;
   box-shadow: 0px 5px 10px;
 }
 
-.container_email{
+.container_email {
   width: fit-content;
   height: fit-content;
 }
 
-.email_kami{
+.email_kami {
   position: relative;
   width: 310px;
   height: 340px;
-  background-image: linear-gradient(to top left, #2D3192,#01ACF1);
+  background-image: linear-gradient(to top left, #2d3192, #01acf1);
   left: 21.44px;
   border-radius: 30px;
   top: 60px;
@@ -500,20 +655,20 @@ li {
   box-shadow: 0px 5px 10px;
 }
 
-.email_kami:hover{
+.email_kami:hover {
   transform: scale(0.9);
   transition: 0.5s;
 }
 
-.email_kami a:active{
+.email_kami a:active {
   color: #0e75ba;
 }
 
-.telepon_kami{
+.telepon_kami {
   position: relative;
   width: 310px;
   height: 340px;
-  background-image: linear-gradient(to top left, #2D3192,#01ACF1);
+  background-image: linear-gradient(to top left, #2d3192, #01acf1);
   left: 39px;
   border-radius: 30px;
   top: 60px;
@@ -522,16 +677,16 @@ li {
   box-shadow: 0px 5px 10px;
 }
 
-.telepon_kami:hover{
+.telepon_kami:hover {
   transform: scale(0.9);
   transition: 0.5s;
 }
 
-.telepon_kami a:active{
+.telepon_kami a:active {
   color: #0e75ba;
 }
 
-.image_email{
+.image_email {
   position: relative;
   width: 178px;
   height: 178px;
@@ -541,7 +696,7 @@ li {
   top: 30px;
 }
 
-.mail_icon{
+.mail_icon {
   position: relative;
   width: 100px;
   height: 100px;
@@ -549,7 +704,7 @@ li {
   padding-left: 39px;
 }
 
-.detail_email{
+.detail_email {
   position: relative;
   justify-content: center;
   top: 22px;
@@ -557,7 +712,7 @@ li {
   /* background-color: aquamarine; */
 }
 
-.detail_email h1{
+.detail_email h1 {
   position: relative;
   font-family: Scada;
   font-size: 24px;
@@ -566,7 +721,7 @@ li {
   margin-right: 25px;
 }
 
-.detail_email li{
+.detail_email li {
   position: relative;
   font-family: Open Sans;
   font-size: 18px;
@@ -578,7 +733,7 @@ li {
   /* left: 5px; */
 }
 
-.image_telepon{
+.image_telepon {
   position: relative;
   width: 178px;
   height: 178px;
@@ -588,7 +743,7 @@ li {
   top: 30px;
 }
 
-.phone_icon{
+.phone_icon {
   position: relative;
   width: 100px;
   height: 100px;
@@ -596,7 +751,7 @@ li {
   padding-left: 39px;
 }
 
-.detail_telepon{
+.detail_telepon {
   position: relative;
   justify-content: center;
   top: 22px;
@@ -604,7 +759,7 @@ li {
   /* background-color: aquamarine; */
 }
 
-.detail_telepon h1{
+.detail_telepon h1 {
   position: relative;
   font-family: Scada;
   font-size: 24px;
@@ -613,7 +768,7 @@ li {
   margin-right: 28px;
 }
 
-.detail_telepon li{
+.detail_telepon li {
   position: relative;
   font-family: Open Sans;
   font-size: 18px;
@@ -625,7 +780,6 @@ li {
   right: -35px;
   letter-spacing: 2px;
 }
-
 
 /*==============================================================*/
 footer {
@@ -715,10 +869,8 @@ footer .copyright-name {
   line-height: 24px;
 }
 
-
 /*============Viewport================*/
 @media screen and (min-width: 1200px) {
-
 }
 
 @media screen and (max-width: 1500px) {
@@ -750,5 +902,4 @@ footer .copyright-name {
 }
 
 @media screen and (max-width: 768px) {
-
 }
