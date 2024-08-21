@@ -28,7 +28,7 @@
           ><img src="../img/starbito_logo.png" alt="starbito-logo"
         /></a>
       </div>
-      <div class="navbar-menu">
+      <div class="navbar-menu display-menu">
         <ul>
           <li>
             <a class="navbar-menu-items" href="#home">Home</a>
@@ -44,6 +44,11 @@
           </li>
         </ul>
       </div>
+
+      <button class="hamburger-menu">
+        <i class="hamburger-menu-icon icon-menu" data-feather="menu"></i>
+        <i class="hamburger-menu-icon icon-close" data-feather="x"></i>
+      </button> 
     </div>
   </nav>
 
@@ -278,13 +283,13 @@
           <h3>Contact</h3>
           <ul class="col-footer-contact">
             <li>
-              <i data-feather="phone"></i>
+              <i class="col-footer-contact-icons" data-feather="phone"></i>
               <p>
                 <a href="tel:+628XXXXXXXXXX">+62-8XX-XXXX-XXXX</a>
               </p>
             </li>
             <li>
-              <span><i data-feather="mail"></i></span>
+              <i class="col-footer-contact-icons" data-feather="mail"></i>
               <p>
                 <a href="mailto:starbito.company@gmail.com"
                   >starbito.company@gmail.com</a>
@@ -304,5 +309,8 @@
     <script>
       feather.replace();
     </script>
+
+    <!-- NavBar Javascript -->
+    <script src="../js/script.js"></script>
 </body>
 </html>

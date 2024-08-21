@@ -5,7 +5,6 @@
 }
 
 * {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   scroll-behavior: smooth;
   box-sizing: border-box;
 }
@@ -21,27 +20,33 @@ section {
 }
 
 h1 {
+  font-family: "Scada", sans-serif;
   font-size: 72px;
   text-align: center;
 }
 
 h2 {
+  font-family: "Scada", sans-serif;
   font-size: 36px;
   text-align: center;
 }
 
 h3 {
+  font-family: "Scada", sans-serif;
   font-size: 24px;
   text-align: center;
 }
 
 h4 {
+  font-family: "Scada", sans-serif;
   font-size: 16px;
   text-align: center;
   font-style: normal;
 }
 
 p {
+  color: #0e75ba;
+  font-family: "Open Sans", sans-serif;
   text-align: justify;
 }
 
@@ -112,10 +117,39 @@ nav > .header {
   background: #01acf1;
   display: block;
   transition: 0.2s;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .navbar-menu ul li:hover::after {
   width: 100%;
+}
+
+.navbar .navbar-extra a {
+  color: var(--primary);
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--secondary);
+}
+
+.hamburger-menu {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+button .hamburger-menu-icon {
+  color: var(--primary);
+}
+
+button .hamburger-menu-icon:hover {
+  color: var(--variation);
+}
+
+button .icon-close {
+  display: none;
 }
 
 /* Hero Section */
@@ -148,10 +182,10 @@ nav > .header {
 .hero-content p {
   margin: 4px 0px;
   padding: 0px;
-  font-family: "Open Sans";
   font-size: 24px;
   font-weight: normal;
   color: #fff;
+  text-align: center;
 }
 
 .hero-content a {
@@ -836,6 +870,7 @@ footer .col-footer ul li {
 }
 
 footer .col-footer ul li a {
+  line-height: 0px;
   text-decoration: none;
   color: var(--primary);
 }
@@ -852,6 +887,10 @@ footer .col-footer-contact {
 footer .col-footer-contact li {
   display: grid;
   grid-template-columns: 30px 1fr;
+}
+
+footer .col-footer-contact-icons {
+  line-height: 0px;
 }
 
 footer .copyright {
@@ -901,5 +940,64 @@ footer .copyright-name {
   }
 }
 
+/* Tablet */
 @media screen and (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .hamburger-menu {
+    display: inline;
+  }
+
+  .navbar-menu {
+    display: none;
+  }
+
+  .display-menu {
+    display: inline;
+  }
+
+  .display-menu ul {
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+    top: 70px;
+    left: 0px;
+  }
+
+  .display-menu ul li {
+    padding: 10px 20px;
+  }
+
+  .navbar-menu ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #01acf1;
+    display: block;
+    transition: 0.2s;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .navbar-menu ul li:hover::after {
+    width: 10%;
+  }
+}
+
+/* Handphone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+
+  footer .col-footer {
+    flex-basis: 100%;
+  }
+
+  footer .col-footer:nth-child(3) {
+    flex-basis: 100%;
+  }
 }
