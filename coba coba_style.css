@@ -54,7 +54,7 @@ text-align: justify;
     gap: 22px;
 }
 
-.card1{
+.card{
     display: flex;
     flex-direction: row;
     position: relative;
@@ -62,15 +62,31 @@ text-align: justify;
     height: 59.4vh;  
 }
 
-.image_layanan1{
+.image_layanan{
     --width_image_layanan:38.8%;
     width: var(--width_image_layanan);
     height: 100%;
     box-sizing: border-box;
+    border-radius: 25px;
     background-image: linear-gradient(to top left, #2D3192,#01ACF1);
+    color: white;
 }
 
-.description_container1{
+.image_layanan img{
+    width: 75%;
+    height: 75%;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-top: 9%;
+    margin-left: 13%;
+}
+
+.image_layanan h1{
+    margin-top: 2%;
+    font-size: clamp(2px,32px,40px);
+}
+
+.description_container{
     position: relative;
     flex-grow: 1;
     align-self: center;
@@ -78,7 +94,7 @@ text-align: justify;
     background-image: linear-gradient(to top left, #2D3192,#01ACF1);
 }
 
-.description1{
+.description{
     position: absolute;
     bottom: 0;
     top: 0;
@@ -88,75 +104,22 @@ text-align: justify;
     background-color: white;
 }
 
-.description1 p{
-    font-family: Open Sans;
-    font-size: 20px;
-    font-weight: 400;
-    text-align: justified;
-    color: #0E75BA;
-    padding-top: 2%;
-    margin-right: 22px;
-    margin-left: 22px;
-}
-
-.icon1{
-    position: absolute;
-    display: flex;
-    gap: 22px;
-    bottom: 0;
-    margin-left: 15px;
-    margin-bottom: 5%;
-}
-
-.icon1 img{
-    width: 12%;
-    height: 12%;
-}
-
-.card2{
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    width: 82.8%;
-    height: 59.4vh; 
-}
-
-.image_layanan2{
-    width: 38.8%;
-    height: 100%;
-    background-image: linear-gradient(to top left, #2D3192,#01ACF1);
-}
-
-.description_container2{
-    position: relative;
-    flex-grow: 1;
-    align-self: center;
-    height: 90%;
-    background-image: linear-gradient(to top left, #2D3192,#01ACF1);;
-}
-
-.description2{
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    right:0;
-    left: 0;
+#description2{
     margin: 2% 0 2% 15px;
-    background-color: white;
 }
 
-.description2 p{
+.description p{
     font-family: Open Sans;
-    font-size: 20px;
+    font-size: clamp(6px,19px,40px);
     font-weight: 400;
     text-align: justified;
     color: #0E75BA;
-    padding-top: 2%;
-    margin-right: 22px;
-    margin-left: 22px;
+    padding-top: 10%;
+    margin-right: 25px;
+    margin-left: 25px;
 }
 
-.icon2{
+.icon{
     position: absolute;
     display: flex;
     gap: 22px;
@@ -165,7 +128,7 @@ text-align: justify;
     margin-bottom: 5%;
 }
 
-.icon2 img{
+.icon img{
     width: 12%;
     height: 12%;
 }
@@ -174,226 +137,49 @@ text-align: justify;
     margin-top: 5%;
 }
 
-.card3{
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    width: 82.8%;
-    height: 59.4vh; 
-    /* background-color: yellow; */
-}
 
-.image_layanan3{
-    width: 38.8%;
-    height: 100%;
-    background-image: linear-gradient(to top left, #2D3192,#01ACF1);
-}
-
-.description_container3{
-    position: relative;
-    flex-grow: 1;
-    align-self: center;
-    height: 90%;
-    background-image: linear-gradient(to top left, #2D3192,#01ACF1);
-}
-
-.description3{
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    right:0;
-    left: 0;
-    margin: 2% 15px 2% 0;
-    background-color: white;
-}
-
-.description3 p{
-    font-family: Open Sans;
-    font-size: 20px;
-    font-weight: 400;
-    text-align: justified;
-    color: #0E75BA;
-    padding-top: 2%;
-    margin-right: 22px;
-    margin-left: 22px;
-}
-
-.icon3{
-    position: absolute;
-    display: flex;
-    gap: 22px;
-    bottom: 0;
-    margin-left: 15px;
-    margin-bottom: 5%;
-}
-
-.icon3 img{
-    width: 12%;
-    height: 12%;
-}
 /* ################################################ */
-/* TAMPILAN LAYANAN UNTUK UKURAN HP */
+/* TAMPILAN LAYANAN UNTUK UKURAN HP DAN LAPTOP*/
 /* ################################################ */
 
 
 
 /* TAMPILAN UNTUK WIDTH DI BAWAH 1024 PX  */
 @media (max-width: 1440px) {
-    .card1{
-        display: flex;
-        flex-direction: row;
-        position: relative;
-        width: 82.8%;
+    .card{
         height: 50vh;  
     }
 
     .card2{
-        display: flex;
-        flex-direction: row;
-        position: relative;
-        width: 82.8%;
-        height: 50vh;  
-    }
-
-    .card3{
-        display: flex;
-        flex-direction: row;
-        position: relative;
-        width: 82.8%;
         height: 50vh;  
     }
 }
 
 /* TAMPILAN UNTUK WIDTH DI BAWAH 1024 PX  */
 @media (max-width: 1025px) { 
-    .card_container{
-        display: flex;
-        position: relative;
-        box-sizing: border-box;
-        align-items: center;
-        width: 100%;
-    }
     
-    .card1{
-        display: flex;
-        flex-direction: row;
-        position: relative;
+    .card{
         width: 82.8%;
         height: 30vh;  
     }
     
-    .image_layanan1{
+    .image_layanan{
         width: 38.8%;
         height: 100%;
     }
 
-    .description_container1{
-        position: relative;
-        flex-grow: 1;
-        align-self: center;
-        height: 90%;
+    .image_layanan h1{
+        font-size: clamp(5px,20px,22px);
     }
     
-    .description1{
-        position: absolute;
-        bottom: 0;
-        top: 0;
-        right:0;
-        left: 0;
+    .description{
         margin: 2% 10px 2% 0;
     }
     
-    .description1 p{
-        font-family: Open Sans;
+    .description p{
         font-size: 13px;
         font-weight: 400;
-        text-align: justified;
-        color: #0E75BA;
-        padding-top: 2%;
-        margin-right: 22px;
-        margin-left: 22px;
-    }
-    
-    .icon1{
-        position: absolute;
-        display: flex;
-        gap: 22px;
-        bottom: 0;
-        margin-left: 15px;
-        margin-bottom: 5%;
-    }
-    
-    .icon1 img{
-        width: 12%;
-        height: 12%;
-    }
-    
-    .card2{
-        display: flex;
-        flex-direction: row;
-        position: relative;
-        width: 82.8%;
-        height: 30vh; 
-    }
-    
-    .image_layanan2{
-        width: 38.8%;
-        height: 100%;
-    }
-    
-    .description2{
-        position: absolute;
-        bottom: 0;
-        top: 0;
-        right:0;
-        left: 0;
-        color: #0E75BA;
-        margin: 2% 0 2% 9px;
-    }
-
-    .description2 p{
-        font-family: Open Sans;
-        font-size: 13px;
-        font-weight: 400;
-        text-align: justified;
-        color: #0E75BA;
         padding-top: 4%;
-        margin-right: 22px;
-        margin-left: 22px;
-    }
-    
-
-    .card3{
-        display: flex;
-        flex-direction: row;
-        position: relative;
-        width: 82.8%;
-        height: 30vh; 
-    }
-    
-    .image_layanan3{
-        width: 38.8%;
-        height: 100%;
-    }
-
-    .description3{
-        position: absolute;
-        bottom: 0;
-        top: 0;
-        right:0;
-        left: 0;
-        margin: 2% 10px 2% 0;
-    }
-
-    .description3 p{
-        font-family: Open Sans;
-        font-size: 13px;
-        font-weight: 400;
-        text-align: justified;
-        color: #0E75BA;
-        padding-top: 4%;
-        margin-right: 22px;
-        margin-left: 22px;
     }
 }
 
@@ -401,197 +187,86 @@ text-align: justify;
 /* TAMPILAN UNTUK WIDTH DI BAWAH 1024 PX  */
 @media (max-width: 769px) { 
     .card_container{
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        box-sizing: border-box;
-        align-items: center;
         width: 100%;
         gap: 22px;
     }
     
-    .card1{
-        display: flex;
-        flex-direction: row;
-        position: relative;
+    .card{
         width: 82.8%;
         height: 25vh;  
     }
     
-    .image_layanan1{
+    .image_layanan{
         width: 38.8%;
         height: 100%;
     }
     
-    .description1{
+    .image_layanan h1{
+        font-size: clamp(10px,14px,20px);
+    }
+
+    .description{
         margin-right: 7px;
     }
 
-    .description1 p{
-        font-family: Open Sans;
-        font-size: 9px;
-        font-weight: 400;
-        text-align: justified;
-        color: #0E75BA;
-        padding-top: 4%;
-        margin-right: 22px;
-        margin-left: 22px;
-    }
-
-    .card2{
-        display: flex;
-        flex-direction: row;
-        position: relative;
-        width: 82.8%;
-        height: 25vh; 
-    }
-    
-    .image_layanan2{
-        width: 38.8%;
-        height: 100%;
-    }
-    
-    .description2{
+    #description2{
         margin-left: 7px;
     }
 
-    .description2 p{
-        font-family: Open Sans;
+    .description p{
         font-size: 9px;
-        font-weight: 400;
-        text-align: justified;
-        color: #0E75BA;
-        padding-top: 4%;
+        padding-top: 8%;
         margin-right: 22px;
         margin-left: 22px;
     }
 
-    .card3{
-        display: flex;
-        flex-direction: row;
-        position: relative;
-        width: 82.8%;
-        height: 25vh; 
-    }
-    
-    .image_layanan3{
-        width: 38.8%;
-        height: 100%;
-    }
-
-    .description3{
-        margin-right: 7px;
-    }
-
-    .description3 p{
-        font-family: Open Sans;
-        font-size: 9px;
-        font-weight: 400;
-        text-align: justified;
-        color: #0E75BA;
-        padding-top: 4%;
-        margin-right: 22px;
-        margin-left: 22px;
+    #icon2{
+        margin-bottom: 30px;
     }
 }
 
 @media (max-width: 426px) {
     .card_container{
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        box-sizing: border-box;
-        align-items: center;
         width: 100%;
         gap: 22px;
     }
     
-    .card1{
-        display: flex;
-        flex-direction: row;
-        position: relative;
+    .card{
         width: 100%;
         height: 14vh;  
     }
     
-    .image_layanan1{
+    .image_layanan{
         width: 38.8%;
         height: 100%;
+        border-radius: 10px;
     }
     
-    .description1{
+    .image_layanan img{
+        border-radius: 8px;
+    }
+
+    .image_layanan h1{
+        font-size: 9px;
+    }
+
+    .description{
         margin-right: 7px;
     }
 
-    .description1 p{
-        font-family: Open Sans;
-        font-size: 13px;
-        font-weight: 400;
-        text-align: justified;
-        color: #0E75BA;
+    #description2{
+        padding-top: 5%;
+    }
+
+    .description p{
+        font-size: clamp(2px,5px,8px);
         padding-top: 4%;
-        margin-right: 22px;
-        margin-left: 22px;
+        margin-right: 16px;
+        margin-left: 16px;
     }
 
-    .card2{
-        display: flex;
-        flex-direction: row;
-        position: relative;
-        width: 100%;
-        height: 14vh; 
-    }
-    
-    .image_layanan2{
-        width: 38.8%;
-        height: 100%;
-    }
-    
-    .description2{
-        margin-left: 4px;
-    }
-
-    .description2 p{
-        font-family: Open Sans;
-        font-size: 4.8px;
-        font-weight: 400;
-        text-align: justified;
-        color: #0E75BA;
-        padding-top: 4%;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .icon2{
-        margin-left: 6px;
-    }
-
-    .card3{
-        display: flex;
-        flex-direction: row;
-        position: relative;
-        width: 100%;
-        height: 14vh; 
-    }
-    
-    .image_layanan3{
-        width: 38.8%;
-        height: 100%;
-    }
-
-    .description3{
-        margin-right: 7px;
-    }
-
-    .description3 p{
-        font-family: Open Sans;
-        font-size: 4px;
-        font-weight: 400;
-        text-align: justified;
-        color: #0E75BA;
-        padding-top: 4%;
-        margin-right: 22px;
-        margin-left: 22px;
+    #icon2{
+        margin-bottom: 10px;
     }
 }
 
