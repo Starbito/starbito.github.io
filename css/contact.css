@@ -1,5 +1,5 @@
-/* Contact Us (Main) Section */
-.contact-us {
+
+.contact-banner {
   padding: 0px;
   margin: 0px;
   min-height: 355px;
@@ -27,7 +27,7 @@
 
 .contact-us-content p {
   margin: 4px 0px;
-  padding: 0px;
+  padding: 0;
   font-family: "Open Sans";
   font-size: 24px;
   font-weight: normal;
@@ -51,209 +51,45 @@
   transform: scale(1.2);
 }
 
-/*=============================CONTACT==========================*/
-/* Contact Section */
-.contact {
-  padding: 0px;
-  margin: 0px;
-  min-height: 240px;
-  background: url(../img/banner_contact.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.contact-container {
   display: flex;
-  justify-content: center;
+  flex-flow: row wrap;
+  gap: 2rem;
   align-items: center;
+  justify-content: center;
 }
 
-.contact-content {
+.contact-item {
+  background: linear-gradient(to top left, #2d3192, #01acf1);
   text-align: center;
-}
-
-.contact-content h1 {
-  margin: auto;
-  padding: 0px;
-  font-family: "Scada";
-  font-size: 48px;
-  font-weight: bold;
-  color: #fff;
-}
-
-.card_image_container2 h1 {
-  font-family: Scada;
-  color: white;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 39.81px;
-  text-align: center;
-}
-
-.header_contact {
-  text-align: center;
-  font-family: "Scada";
-  color: #2d3192;
-  font-size: 26px;
-  font-weight: 700;
-}
-
-.inner_contact {
-  width: 1080px;
-  height: 459.06px;
   display: flex;
-  /* background-color: brown; */
-  /* position: absolute; */
-  padding-left: 170px;
-  padding-top: 30px;
-}
-
-.inner_contact a {
-  text-decoration: none;
-}
-
-.image_contact img {
-  width: 418.56px;
-  height: 459.06px;
-  object-fit: cover;
-  border-radius: 25px;
-  box-shadow: 0px 5px 10px;
-}
-
-.container_email {
-  width: fit-content;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 36px;
+  width: 375px;
   height: fit-content;
 }
 
-.email_kami {
-  position: relative;
-  width: 310px;
-  height: 340px;
-  background-image: linear-gradient(to top left, #2d3192, #01acf1);
-  left: 21.44px;
-  border-radius: 30px;
-  top: 60px;
-  transition: 0.3s;
-  box-shadow: 0px 5px 10px;
+.contact-item h2 {
+  color: white;
+  margin: 1rem;
 }
 
-.email_kami:hover {
-  transform: scale(0.9);
-  transition: 0.5s;
-}
-
-.email_kami a:active {
-  color: #0e75ba;
-}
-
-.telepon_kami {
-  position: relative;
-  width: 310px;
-  height: 340px;
-  background-image: linear-gradient(to top left, #2d3192, #01acf1);
-  left: 39px;
-  border-radius: 30px;
-  top: 60px;
-  justify-content: center;
-  transition: 0.3s;
-  box-shadow: 0px 5px 10px;
-}
-
-.telepon_kami:hover {
-  transform: scale(0.9);
-  transition: 0.5s;
-}
-
-.telepon_kami a:active {
-  color: #0e75ba;
-}
-
-.image_email {
-  position: relative;
-  width: 178px;
-  height: 178px;
-  border-radius: 50%;
-  background-color: white;
-  margin-left: 70px;
-  top: 30px;
-}
-
-.mail_icon {
-  position: relative;
-  width: 100px;
-  height: 100px;
-  padding-top: 40px;
-  padding-left: 39px;
-}
-
-.detail_email {
-  position: relative;
-  justify-content: center;
-  top: 22px;
-}
-
-.detail_email h1 {
-  position: relative;
-  font-family: Scada;
+.contact-item p {
+  color: white;
   font-size: 24px;
-  font-weight: 700;
-  color: white;
-  margin-right: 25px;
+  text-align: center;
+  padding: 0 1rem 1rem 1rem;
 }
 
-.detail_email li {
-  position: relative;
-  font-family: Open Sans;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 25px;
-  right: 10px;
-  color: white;
-  top: -2px;
-}
-
-.image_telepon {
-  position: relative;
-  width: 178px;
-  height: 178px;
-  border-radius: 50%;
-  background-color: white;
-  margin-left: 70px;
-  top: 30px;
-}
-
-.phone_icon {
-  position: relative;
-  width: 100px;
-  height: 100px;
-  padding-top: 40px;
-  padding-left: 39px;
-}
-
-.detail_telepon {
-  position: relative;
-  justify-content: center;
-  top: 22px;
-  /* right: 36px; */
-  /* background-color: aquamarine; */
-}
-
-.detail_telepon h1 {
-  position: relative;
-  font-family: Scada;
-  font-size: 24px;
-  font-weight: 700;
-  color: white;
-  margin-right: 28px;
-}
-
-.detail_telepon li {
-  position: relative;
-  font-family: Open Sans;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 25px;
-  right: 10px;
-  color: white;
-  top: -2px;
-  right: -35px;
-  letter-spacing: 2px;
+.contact-item img {
+  background: white;
+  border-radius: 35%;
+  padding: 24px;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 150px;
+  height: 150px;
+  align-self: center;
 }
