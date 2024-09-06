@@ -1,0 +1,156 @@
+/*=============================ABOUT==========================*/
+/* About Us Section */
+.about-us {
+  padding: 0px;
+  margin: 0px;
+  min-height: 240px;
+  background: url(../img/banner_about.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us-content {
+  text-align: center;
+}
+
+.about-us-content h1 {
+  display: flex;
+  margin: auto;
+  padding: 0px;
+  font-family: "Scada";
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/*==============================VISI-MISI==============================*/
+#visi-misi {
+  margin-right: 15rem;
+  margin-left: 15rem;
+  padding: auto 0;
+}
+
+#visi-misi h2 {
+  color: var(--primary);
+}
+
+#visi-misi p {
+  font-size: 18px;
+}
+
+.visi {
+  text-align: center;
+}
+
+.misi li {
+  text-align: center;
+  list-style: none;
+  margin-bottom: 4px;
+  font-size: 18px;
+}
+
+/*====================================TEAM=========================*/
+#team {
+  margin: 0;
+  padding: 16px 0;
+  background-color: cornflowerblue;
+}
+
+#team hr {
+  color: aliceblue;
+  margin: 0.5rem 2rem;
+  padding: 0 2rem;
+}
+
+#team h2 {
+  font-size: 36px;
+  color: aliceblue;
+}
+
+#team h4 {
+  font-size: 18px;
+  color: #607070;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+#team .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 72px;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 32px 24px;
+  padding: 8px;
+}
+
+#team .column {
+  width: 100%;
+  max-width: 350px;
+  height: fit-content;
+  text-align: center;
+  background-color: aliceblue;
+  border: 1px solid #7fc7d9;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 40px;
+}
+
+#team .profile-photo {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+#team p {
+  padding: 8px;
+  color: darkslateblue;
+  text-align: center;
+}
+
+#socials img {
+  margin: 8px 24px;
+  height: 35px;
+  width: 35px;
+  transition: all 0.2s;
+}
+
+#socials img:hover {
+  margin: 0 22px;
+  height: 40px;
+  width: 40px;
+}
+
+#socials a {
+  text-decoration: none;
+}
+
+/*============Viewport================*/
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (max-width: 1500px) {
+  #visi-misi {
+    margin-right: 12rem;
+    margin-left: 12rem;
+    padding: auto 0;
+  }
+}
+
+@media screen and (max-width: 1125px) {
+  #visi-misi {
+    margin-right: 5rem;
+    margin-left: 5rem;
+    padding: auto 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
