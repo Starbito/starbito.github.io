@@ -8,9 +8,6 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   scroll-behavior: smooth;
   box-sizing: border-box;
-}
-
-body {
   margin: 0;
   padding: 0;
 }
@@ -23,8 +20,8 @@ section {
 h1 {
   font-size: 72px;
   text-align: center;
+  margin: 2rem;
   color:#2d3192;
-  margin-top: 0;
 }
 
 h2 {
@@ -161,9 +158,9 @@ header a:has(img) {
   display: block;
 }
 
-/* Hero Section */
+/* =========== Hero Section ============= */
 .hero {
-  padding: 0px;
+  padding: 1rem 2rem;
   margin: 0px;
   min-height: 100vh;
   background: url(../img/banner_home.png);
@@ -189,7 +186,7 @@ header a:has(img) {
 }
 
 .hero-content p {
-  margin: 2rem 6rem;
+  margin: 2rem;
   font-family: "Open Sans";
   font-size: 24px;
   font-weight: normal;
@@ -214,6 +211,10 @@ header a:has(img) {
 }
 
 /*==============================================================*/
+
+.layanan {
+  margin-top: 1rem;
+}
 
 /*==============================================================*/
 footer {
@@ -359,24 +360,31 @@ footer .copyright-name {
   }
 }
 
-@media screen and (max-width: 1125px) {
-  nav ul {
-    justify-content: center;
-  }
-}
-
-
-
-@media screen and (max-width: 768px) {
-  nav ul {
-    display: none;
-  }
-
+@media screen and (max-width: 1000px) {
   .dropdown {
     display: block;
   }
 
+  header {
+    padding: 0 8px;
+  }
+
+  nav ul {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 0 8px;
+  }
+
   main aside {
     align-self: center;
+  }
+
+  section {
+    margin: 8px;
+    padding: 8px;
   }
 }

@@ -31,11 +31,12 @@
 #visi-misi {
   margin-right: 15rem;
   margin-left: 15rem;
-  padding: auto 0;
+  padding: 0;
 }
 
 #visi-misi h2 {
   color: var(--primary);
+  margin: 2rem;
 }
 
 #visi-misi p {
@@ -71,11 +72,24 @@
   color: white;
 }
 
+#team h3 {
+  margin: 1rem;
+  color: #2d3192;
+}
+
 #team h4 {
   font-size: 18px;
+  margin: 0.75rem;
   color: #607070;
   padding-bottom: 0;
   margin-bottom: 0;
+}
+
+#team p {
+  padding: 8px;
+  margin: 0.5rem 0.25rem;
+  color: #2d3192;
+  text-align: center;
 }
 
 #team .row {
@@ -109,12 +123,6 @@
   border-top-right-radius: 40px;
 }
 
-#team p {
-  padding: 8px;
-  color: darkslateblue;
-  text-align: center;
-}
-
 #socials img {
   margin: 8px 24px;
   height: 35px;
@@ -138,9 +146,8 @@
 
 @media screen and (max-width: 1500px) {
   #visi-misi {
-    margin-right: 12rem;
-    margin-left: 12rem;
-    padding: auto 0;
+    margin-right: 10rem;
+    margin-left: 10rem;
   }
 }
 
@@ -148,9 +155,13 @@
   #visi-misi {
     margin-right: 5rem;
     margin-left: 5rem;
-    padding: auto 0;
   }
 }
 
 @media screen and (max-width: 768px) {
+  #visi-misi {
+    margin-right: 2rem;
+    margin-left: 2rem;
+    line-height: 1.5;
+  }
 }
