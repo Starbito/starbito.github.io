@@ -187,9 +187,12 @@ header a:has(img) {
 }
 
 .hero-content p {
+  text-align: center;
   margin: 2rem;
+  padding: 0 15%;
   font-family: "Open Sans";
   font-size: 24px;
+  line-height: 1.75;
   font-weight: normal;
   color: #fff;
 }
@@ -369,6 +372,10 @@ footer .copyright-name {
   nav ul {
     display: none;
   }
+
+  .hero-content p {
+    padding: 0;
+  }
   
 }
 
@@ -379,6 +386,7 @@ footer .copyright-name {
 
   .hero-content p {
     font-size: 16px;
+    padding: 0;
   }
 
   main aside {

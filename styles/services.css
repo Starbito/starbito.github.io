@@ -1,14 +1,12 @@
-.layanan {
-  margin-top: -1rem;
-}
-
 .layanan h1 {
-  font-size: 48px;
+  font-size: 36px;
+  border-bottom: 1px solid #0e75ba;
+  margin: 1rem 20%;
+  padding-bottom: 0.25rem;
 }
 
 .layanan p {
-  padding: 0 8px;
-  margin: 0 8px;
+  margin: 0 20%;
   font-size: 18px;
 }
 
@@ -72,8 +70,23 @@
   height: 75px;
 }
 
+@media screen and (max-width: 1500px) {
+  .layanan p {
+    margin-right: 10rem;
+    margin-left: 10rem;
+  }
+}
+
+@media screen and (max-width: 1125px) {
+  .layanan p {
+    margin-right: 5rem;
+    margin-left: 5rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .layanan p {
+    margin: 0;
     font-size: 16px;
   }
 

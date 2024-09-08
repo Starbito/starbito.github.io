@@ -170,12 +170,8 @@
     line-height: 1.5;
   }
 
-  #visi-misi p {
+  #visi-misi p, #visi-misi li {
     font-size: 14px;
-  }
-
-  #visi-misi li {
-    font-size: 12px;
   }
 
   #visi-misi li {
