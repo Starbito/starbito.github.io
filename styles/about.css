@@ -57,18 +57,18 @@
 #team {
   margin: 0;
   padding: 16px 0;
-  background-color: cornflowerblue;
+  background: linear-gradient(to top left, #2d3192, #01acf1);
 }
 
 #team hr {
-  color: aliceblue;
+  color: white;
   margin: 0.5rem 2rem;
   padding: 0 2rem;
 }
 
 #team h2 {
-  font-size: 36px;
-  color: aliceblue;
+  font-size: 48px;
+  color: white;
 }
 
 #team h4 {
