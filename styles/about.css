@@ -136,9 +136,8 @@
 }
 
 #socials img:hover {
-  margin: 0 22px;
-  height: 40px;
-  width: 40px;
+  transform: scale(1.3);
+  transition: all ease-in-out 0.2s;
 }
 
 #socials a {

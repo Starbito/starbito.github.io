@@ -384,7 +384,12 @@ footer .copyright-name {
     padding: 0 8px;
   }
 
+  .hero-content, .hero-content h1, .hero-content p {
+    text-align: left;
+  }
+
   .hero-content p {
+    margin: 1rem 0;
     font-size: 16px;
     padding: 0;
   }
