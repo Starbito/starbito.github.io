@@ -1,12 +1,12 @@
 .layanan h1 {
-  font-size: 36px;
+  font-size: 48px;
   border-bottom: 1px solid #0e75ba;
-  margin: 1rem 20%;
+  margin: 1rem 10%;
   padding-bottom: 0.25rem;
 }
 
 .layanan p {
-  margin: 0 20%;
+  margin: 0 10%;
   font-size: 18px;
 }
 
@@ -87,9 +87,7 @@
 @media screen and (max-width: 768px) {
   .layanan h1 {
     text-align: left;
-  }
-
-  .layanan h1 {
+    font-size: 36px;
     margin: 1rem;
   }
 
