@@ -1,8 +1,15 @@
+.layanan {
+  margin-top: -1rem;
+}
+
+.layanan h1 {
+  font-size: 48px;
+}
+
 .layanan p {
   padding: 0 8px;
   margin: 0 8px;
   font-size: 18px;
-  color: #2d3192;
 }
 
 .services-container {
@@ -37,10 +44,11 @@
 
 .service-item p {
   font-family: "Open Sans";
-  color: #2d3192;
-  font-size: 20px;
+  text-align: justify;
+  font-weight: 500;
+  font-size: 16px;
   margin: 0.75rem;
-  padding: 0 1rem;
+  padding: 0;
 }
 
 .service-item > img {
@@ -62,4 +70,19 @@
   object-fit: scale-down;
   width: 75px;
   height: 75px;
+}
+
+@media screen and (max-width: 768px) {
+  .layanan p {
+    font-size: 16px;
+  }
+
+  .service-item h2 {
+    font-size: 28px;
+  }
+
+  .service-item p {
+    font-size: 14px;
+    font-weight: normal;
+  }
 }

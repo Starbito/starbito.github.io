@@ -42,6 +42,7 @@ h4 {
 
 p {
   text-align: justify;
+  color: #0e75ba;
 }
 
 a {
@@ -212,10 +213,6 @@ header a:has(img) {
 
 /*==============================================================*/
 
-.layanan {
-  margin-top: 1rem;
-}
-
 /*==============================================================*/
 footer {
   width: 100%;
@@ -372,11 +369,16 @@ footer .copyright-name {
   nav ul {
     display: none;
   }
+  
 }
 
 @media screen and (max-width: 768px) {
   header {
     padding: 0 8px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
   }
 
   main aside {
@@ -386,5 +388,10 @@ footer .copyright-name {
   section {
     margin: 8px;
     padding: 8px;
+  }
+
+  footer .row-footer {
+    width: 90%;
+    flex-direction: column;
   }
 }

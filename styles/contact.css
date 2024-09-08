@@ -2,7 +2,7 @@
   padding: 0px;
   margin: 0px;
   min-height: 355px;
-  background: url(../img/banner_cp.png);
+  background: url(../img/contact-banner.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -71,10 +71,10 @@
   height: 375px;
 }
 
-.contact-item:first-child {
+/* .contact-item:first-child {
   height: 300px;
   object-fit: cover;
-}
+} */
 
 .contact-container div:hover {
   transform: scale(1.15);
